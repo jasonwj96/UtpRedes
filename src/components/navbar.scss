@@ -6,12 +6,16 @@ $link-width: 150px;
 
 #navbar-container {
   @include card();
+  background-color: #fff;
   width: 100%;
   height: $navbar-height;
   display: flex;
   border-radius: 0px;
   justify-content: space-evenly;
   align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 10;
 }
 
 .link {

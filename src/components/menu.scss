@@ -1,0 +1,87 @@
+@import "../themes/light_theme";
+
+#menu-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  left: 0;
+  align-items: center;
+  z-index: 0;
+
+  #main {
+    @include card();
+    width: 300px;
+    height: 100%;
+
+    img#menu-logo {
+      width: 100px;
+      height: auto;
+      margin: 50px + 20px auto 10px auto;
+    }
+
+    #linkset {
+      box-sizing: border-box;
+      display: flex;
+      flex-flow: column;
+      width: 100%;
+      padding: 10px;
+
+      .menu-link {
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        height: 20px;
+        margin: 5px 0px;
+        transition: 0.2s all ease-out;
+        cursor: pointer;
+
+        border-radius: 4px;
+
+        i {
+          margin-right: 10px;
+        }
+
+        p {
+          font-weight: bold;
+        }
+
+        &:hover {
+          background-color: #9900ff33;
+          color: #8800d6;
+        }
+      }
+
+      .selected {
+        background-color: #9900ff33;
+        color: #8800d6;
+      }
+    }
+  }
+
+  #tab {
+    @include card();
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 0px 50% 50% 0px;
+    box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.205);
+
+    #hamburger-btn {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+
+      i {
+        color: #333;
+        font-size: 20px;
+      }
+    }
+  }
+}

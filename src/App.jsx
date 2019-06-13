@@ -1,13 +1,15 @@
-import React from 'react';
-import './App.scss';
-import Navbar from './components/navbar';
+import React from "react";
+import "./App.scss";
+import Navbar from "./components/navbar";
+import Menu from "./components/menu";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-     <Navbar/>
+      <Navbar />
+      <Menu />
     </div>
   );
-}
+};
 
 export default App;
