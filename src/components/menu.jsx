@@ -3,24 +3,26 @@ import "./menu.scss";
 import logo from "../img/logo.jpg";
 
 const Menu = props => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   useEffect(() => {
-    const container = document.getElementById("menu-container");
+    return () => {
+      const container = document.getElementById("menu-container");
 
-    if (menuOpen) {
-      container.className = "expandMenu";
-    } else {
-      container.className = "collapseMenu";
-    }
-  }, [menuOpen]);
+      if (showMenu) {
+        container.className = "collapseMenu";
+      } else {
+        container.className = "expandMenu";
+      }
+    };
+  }, [showMenu]);
 
-  const toggleMenu = e => {
-    setMenuOpen(!menuOpen);
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
   };
 
   return (
-    <div id="menu-container" className="collapseMenu">
+    <div id="menu-container">
       <div id="main">
         <img id="menu-logo" src={logo} alt="logo" />
         <div id="linkset">
@@ -48,7 +50,7 @@ const Menu = props => {
       </div>
       <div onClick={toggleMenu} id="tab">
         <button id="hamburger-btn">
-          {menuOpen ? (
+          {showMenu ? (
             <i className="fas fa-arrow-left" />
           ) : (
             <i className="fas fa-bars" />

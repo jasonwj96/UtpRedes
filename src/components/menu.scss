@@ -2,33 +2,37 @@
 
 @keyframes expandMenu {
   from {
-    // transform: translate(-300px, 0);
     left: -300px;
   }
   to {
-    // transform: translate(300px, 0);
     left: 0px;
   }
 }
 
 @keyframes collapseMenu {
   from {
-    // transform: translate(300px, 0);
     left: 0px;
   }
 
   to {
-    // transform: translate(-300px, 0);
     left: -300px;
   }
 }
 
 .expandMenu {
   animation-name: expandMenu;
+  animation-duration: 0.5s;
+  animation-delay: 0ms;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-fill-mode: forwards;
 }
 
 .collapseMenu {
   animation-name: collapseMenu;
+  animation-duration: 0.5s;
+  animation-delay: 0ms;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-fill-mode: forwards;
 }
 
 #menu-container {
@@ -39,11 +43,7 @@
   position: absolute;
   left: -300px;
   align-items: center;
-  z-index: 0;
-  animation-duration: 0.5s;
-  animation-delay: 0ms;
-  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-  animation-fill-mode: forwards;
+  z-index: 10;
 
   #main {
     @include card();
