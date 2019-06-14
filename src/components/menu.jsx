@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./menu.scss";
 import logo from "../img/logo.jpg";
 
-const Menu = () => {
+const Menu = props => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const container = document.getElementById("menu-container");
+
+    if (menuOpen) {
+      container.className = "expandMenu";
+    } else {
+      container.className = "collapseMenu";
+    }
+  }, [menuOpen]);
+
+  const toggleMenu = e => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <div id="menu-container">
+    <div id="menu-container" className="collapseMenu">
       <div id="main">
         <img id="menu-logo" src={logo} alt="logo" />
         <div id="linkset">
@@ -30,9 +46,13 @@ const Menu = () => {
           </div>
         </div>
       </div>
-      <div id="tab">
+      <div onClick={toggleMenu} id="tab">
         <button id="hamburger-btn">
-          <i className="fas fa-bars" />
+          {menuOpen ? (
+            <i className="fas fa-arrow-left" />
+          ) : (
+            <i className="fas fa-bars" />
+          )}
         </button>
       </div>
     </div>
