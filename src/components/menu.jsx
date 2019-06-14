@@ -17,15 +17,15 @@ const Menu = () => {
             <p>Eventos</p>
           </div>
           <div className="menu-link">
-            <i class="fas fa-graduation-cap" />
+            <i class="fas fa-briefcase" />
             <p>Campo laboral</p>
           </div>
           <div className="menu-link">
-            <i class="fas fa-graduation-cap" />
+            <i class="fas fa-book" />
             <p>Materias</p>
           </div>
           <div className="menu-link">
-            <i class="fas fa-graduation-cap" />
+            <i class="fas fa-user-tie" />
             <p>Funcionarios</p>
           </div>
         </div>

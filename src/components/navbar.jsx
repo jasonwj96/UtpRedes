@@ -11,15 +11,18 @@ const Navbar = () => {
       <a className="link" href="/home">
         Eventos
       </a>
-      <img id="logo" src={logo} alt="logo" />
+      {/* <img id="logo" src={logo} alt="logo" /> */}
       <a className="link" href="/home">
         Campo laboral
       </a>
       <a className="link" href="/home">
         Materias de redes
       </a>
+      <a className="link" href="/home">
+        Funcionarios
+      </a>
     </div>
   );
-}
+};
 
 export default Navbar;
