@@ -10,9 +10,7 @@ const Breadcrumbs = props => {
       <div className="items">
         {items.map((item, i) => {
           return item === separator ? (
-            <p key={i} className="bc-item separator">
-              {item}
-            </p>
+            <i key={i} className="fas fa-chevron-right separator" />
           ) : (
             <a key={i} href={"/" + item} className="bc-item link">
               {item}
