@@ -4,18 +4,18 @@
   box-sizing: border-box;
   width: auto;
   margin: 0px 20px;
-  border-bottom: 2px solid #0000003b;
+  border-bottom: 1px solid #0000003b;
   display: flex;
   padding: 0px 20px;
   font-family: "Product Sans Regular";
-  font-weight: 600;
+  //   font-family: "Open Sans", sans-serif;
 
   .items {
     display: flex;
 
     .bc-item {
       margin: 5px 10px;
-      color: #333;
+      color: $bc-item-color;
       text-decoration: none;
       display: flex;
       align-items: center;
@@ -27,13 +27,14 @@
       transition: 0.2s background-color ease-in-out;
 
       &:hover {
-        background-color: #3333330e;
+        background-color: #33333317;
       }
     }
 
     .separator {
-      color: $accent;
+      color: $separator-color;
       font-size: 1.5em;
+      font-weight: bold;
     }
   }
 }

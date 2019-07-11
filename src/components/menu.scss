@@ -45,7 +45,6 @@
   align-items: center;
   z-index: 10;
 
-
   #main {
     @include card();
     width: 300px;
@@ -104,7 +103,7 @@
     height: 50px;
     width: 50px;
     border-radius: 0px 50% 50% 0px;
-    box-shadow: 3.5px 1px 3px 0 rgba(0, 0, 0, 0.205);
+    box-shadow: 3px 1px 3px 0 rgba(0, 0, 0, 0.205);
 
     #hamburger-btn {
       background-color: transparent;
