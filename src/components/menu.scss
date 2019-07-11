@@ -38,12 +38,13 @@
 #menu-container {
   display: flex;
   height: 100vh;
-  width: 100%;
+  width: auto;
   display: flex;
   position: absolute;
   left: -300px;
   align-items: center;
   z-index: 10;
+
 
   #main {
     @include card();

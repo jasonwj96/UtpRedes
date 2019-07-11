@@ -27,23 +27,23 @@ const Menu = props => {
         <img id="menu-logo" src={logo} alt="logo" />
         <div id="linkset">
           <div className="menu-link selected">
-            <i class="fas fa-graduation-cap" />
+            <i className="fas fa-graduation-cap" />
             <p>Oferta academica</p>
           </div>
           <div className="menu-link">
-            <i class="far fa-calendar-alt" />
+            <i className="far fa-calendar-alt" />
             <p>Eventos</p>
           </div>
           <div className="menu-link">
-            <i class="fas fa-briefcase" />
+            <i className="fas fa-briefcase" />
             <p>Campo laboral</p>
           </div>
           <div className="menu-link">
-            <i class="fas fa-book" />
+            <i className="fas fa-book" />
             <p>Materias</p>
           </div>
           <div className="menu-link">
-            <i class="fas fa-user-tie" />
+            <i className="fas fa-user-tie" />
             <p>Funcionarios</p>
           </div>
         </div>
@@ -53,8 +53,8 @@ const Menu = props => {
           {showMenu ? (
             <i className="fas fa-arrow-left" />
           ) : (
-            <i className="fas fa-bars" />
-          )}
+              <i className="fas fa-bars" />
+            )}
         </button>
       </div>
     </div>

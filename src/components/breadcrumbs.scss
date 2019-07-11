@@ -1,0 +1,39 @@
+@import "../themes/light_theme";
+
+.breadcrumbs-container {
+  box-sizing: border-box;
+  width: auto;
+  margin: 0px 20px;
+  border-bottom: 2px solid #0000003b;
+  display: flex;
+  padding: 0px 20px;
+  font-family: "Product Sans Regular";
+  font-weight: 600;
+
+  .items {
+    display: flex;
+
+    .bc-item {
+      margin: 5px 10px;
+      color: #333;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      border-radius: 4px;
+    }
+
+    .link {
+      padding: 10px;
+      transition: 0.2s background-color ease-in-out;
+
+      &:hover {
+        background-color: #3333330e;
+      }
+    }
+
+    .separator {
+      color: $accent;
+      font-size: 1.5em;
+    }
+  }
+}
