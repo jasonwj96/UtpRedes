@@ -1,10 +1,11 @@
 import React from "react";
 import "./breadcrumbs.scss";
+import { Link } from "react-router-dom";
 
 const Breadcrumbs = props => {
   const separator = ">";
   const items = [
-    "Página principal",
+    "Home",
     separator,
     "Eventos",
     separator,
@@ -32,9 +33,9 @@ const Breadcrumbs = props => {
             }
 
             return (
-              <a key={i} href={itemRoute} className="bc-item link">
+              <Link key={i} to={itemRoute} className="bc-item link">
                 {item}
-              </a>
+              </Link>
             );
           }
         })}
