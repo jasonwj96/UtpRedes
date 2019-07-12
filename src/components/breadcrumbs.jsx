@@ -8,9 +8,10 @@ const Breadcrumbs = props => {
   const separator = ">";
 
   useEffect(() => {
-    const splitPath = currentPath.split("/");
+    let splitPath = currentPath.split("/");
     const newPath = [];
 
+    //starts at 1 to avoid the first null value
     for (let i = 1; i < splitPath.length; i++) {
       newPath.push(splitPath[i]);
 
@@ -19,9 +20,9 @@ const Breadcrumbs = props => {
       }
     }
 
-    if (newPath[newPath.length - 1] == ">") newPath.pop();
     setItems(newPath);
-  }, [props.location.pathname, currentPath, items]);
+    setCurrentPath(props.location.pathname);
+  }, [props.location.pathname, items, currentPath]);
 
   return (
     <div className="breadcrumbs-container">

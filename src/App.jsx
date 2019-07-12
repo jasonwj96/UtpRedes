@@ -12,7 +12,7 @@ const App = () => {
         <Menu />
         <Breadcrumbs />
         <Redirect from="/" to="/Home" />
-        <Route exact path="/Home" exact component={Home} />
+        <Route path="/Home" component={Home} />
       </Router>
     </div>
   );
