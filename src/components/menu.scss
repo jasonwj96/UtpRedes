@@ -44,6 +44,7 @@
   left: -300px;
   align-items: center;
   z-index: 10;
+  font-family: "Product Sans Regular", sans-serif;
 
   #main {
     @include card();
@@ -81,16 +82,17 @@
         p {
           font-size: 0.8em;
           font-weight: bold;
+          letter-spacing: 0.05em;
         }
 
         &:hover {
-          background-color: #9900ff33;
+          background-color: #9835da1c;
           color: #8800d6;
         }
       }
 
       .selected {
-        background-color: #9900ff33;
+        background-color: #9835da1c;
         color: #8800d6;
       }
     }
