@@ -1,20 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./breadcrumbs.scss";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 const Breadcrumbs = props => {
+  const [currentPath, setCurrentPath] = useState(props.location.pathname);
+  const [items, setItems] = useState(["Home"]);
   const separator = ">";
-  const items = [
-    "Home",
-    separator,
-    "Eventos",
-    separator,
-    "2019",
-    separator,
-    "Julio",
-    separator,
-    "Feria de empleo"
-  ];
+
+  useEffect(() => {
+    const splitPath = currentPath.split("/");
+    const newPath = [];
+
+    for (let i = 1; i < splitPath.length; i++) {
+      newPath.push(splitPath[i]);
+
+      if (splitPath.length > 2 && splitPath[i + 1] != null) {
+        newPath.push(separator);
+      }
+    }
+
+    if (newPath[newPath.length - 1] == ">") newPath.pop();
+    setItems(newPath);
+  }, [props.location.pathname, currentPath, items]);
 
   return (
     <div className="breadcrumbs-container">
@@ -44,4 +51,4 @@ const Breadcrumbs = props => {
   );
 };
 
-export default Breadcrumbs;
+export default withRouter(Breadcrumbs);
