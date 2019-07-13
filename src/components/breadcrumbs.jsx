@@ -20,7 +20,7 @@ const Breadcrumbs = props => {
 
       //Only add separators for more than 2 links
       if (splitPath.length > 2 && splitPath[i + 1] != null) {
-        newPath.push(separator);
+        newPath.push("/");
       }
     }
     return newPath;
