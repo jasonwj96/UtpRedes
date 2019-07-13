@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.postcard-container {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  font-family: "Product Sans Regular";
+  cursor: pointer;
+}
+
+.mail {
+  width: 300px;
+  height: 200px;
+  background-color: #0066ff;
+  position: relative;
+  border-radius: 0px 0px 10px 10px;
+  transform-style: preserve-3d;
+
+  &:hover {
+    .cover:before {
+      transform: rotateX(180deg);
+      transition: all 1s ease;
+    }
+
+    .letter {
+      top: -80px;
+      transition: all 1s 1s ease;
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid #005be4;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid #0046af;
+    border-radius: 0px 0px 10px 10px;
+    z-index: 5;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 150px solid #0046af;
+    border-right: 150px solid transparent;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid #0046af;
+    border-radius: 0px 0px 10px 10px;
+    z-index: 4;
+  }
+
+  .cover {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-left: 150px solid transparent;
+      border-right: 150px solid transparent;
+      border-top: 100px solid #3c81e7;
+      border-bottom: 100px solid transparent;
+      transform-origin: top;
+      transform: rotateX(0deg);
+      transition: all 1s 1s ease;
+      z-index: 6;
+    }
+  }
+
+  .letter {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 10px;
+    background: #dddddd;
+    width: 280px;
+    height: 180px;
+    border-radius: 20px;
+    transition: all 1s ease;
+
+    h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3em;
+      color: #798992;
+      font-weight: 900;
+    }
+
+    input {
+      width: auto;
+      height: 30px;
+      margin: 10px 5px;
+      color: #333;
+      background: transparent;
+      border: none;
+      border-bottom: #333 solid 2px;
+    }
+  }
+}
