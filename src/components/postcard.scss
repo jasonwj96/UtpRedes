@@ -42,8 +42,12 @@
       outline: none;
       cursor: pointer;
       box-shadow: 1px 1px 3px 1px #00000067;
-      font-size: 1.2em;
+      font-size: 1.4em;
       transition: background-color 0.2s ease-in-out;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .send {
