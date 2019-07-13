@@ -9,6 +9,23 @@
   right: 25px;
   font-family: "Product Sans Regular";
   cursor: pointer;
+
+  &:hover {
+    .postcard-msg {
+      opacity: 0;
+      transition: all 1s ease-in-out;
+    }
+  }
+
+  .postcard-msg {
+    background-color: #ffffff;
+    font-size: 0.9em;
+    width: 280px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.226);
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 4px;
+  }
 }
 
 .mail {
@@ -22,12 +39,12 @@
   &:hover {
     .cover:before {
       transform: rotateX(180deg);
-      transition: all 1s ease;
+      transition: all 0.5s ease;
     }
 
     .letter {
       top: -80px;
-      transition: all 1s 1s ease;
+      transition: all 0.5s 0.5s ease; //delayed
     }
   }
 
@@ -69,7 +86,7 @@
       border-bottom: 100px solid transparent;
       transform-origin: top;
       transform: rotateX(0deg);
-      transition: all 1s 1s ease;
+      transition: all 0.5s 0.5s ease; //delayed
       z-index: 6;
     }
   }
@@ -79,11 +96,14 @@
     z-index: 3;
     top: 0;
     left: 10px;
-    background: #dddddd;
+    background: #f8f8f8;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.226);
     width: 280px;
     height: 180px;
     border-radius: 20px;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
+    box-sizing: border-box;
+    padding: 20px 0px;
 
     h1 {
       position: absolute;
@@ -96,10 +116,11 @@
     }
 
     input {
-      width: auto;
+      width: 250px;
       height: 30px;
       margin: 10px 5px;
-      color: #333;
+      color: #798992;
+      font-family: "Product Sans Regular";
       background: transparent;
       border: none;
       border-bottom: #333 solid 2px;
