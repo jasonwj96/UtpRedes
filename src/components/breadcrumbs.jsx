@@ -40,6 +40,11 @@ const Breadcrumbs = props => {
               }
             }
 
+            //Delete last separator
+            if (itemRoute[itemRoute.length - 1] === "/") {
+              itemRoute = itemRoute.substring(0, itemRoute.length - 1);
+            }
+
             return (
               <Link key={i} to={itemRoute} className="bc-item link">
                 {item}
