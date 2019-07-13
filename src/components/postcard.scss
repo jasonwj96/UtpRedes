@@ -8,7 +8,6 @@
   bottom: 25px;
   right: 25px;
   font-family: "Product Sans Regular";
-  cursor: pointer;
 
   &:hover {
     .postcard-msg {
@@ -21,109 +20,152 @@
     background-color: #ffffff;
     font-size: 0.9em;
     width: 280px;
-    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.226);
+    box-shadow: 1px 1px 3px 1px #0000003a;
     margin: 10px auto;
     padding: 5px;
     border-radius: 4px;
   }
-}
 
-.mail {
-  width: 300px;
-  height: 200px;
-  background-color: #0066ff;
-  position: relative;
-  border-radius: 0px 0px 10px 10px;
-  transform-style: preserve-3d;
+  .buttons {
+    display: flex;
+    width: auto;
+    justify-content: space-evenly;
+    margin: 10px;
 
-  &:hover {
-    .cover:before {
-      transform: rotateX(180deg);
-      transition: all 0.5s ease;
+    button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      padding: 0px;
+      border: none;
+      background: transparent;
+      outline: none;
+      cursor: pointer;
+      box-shadow: 1px 1px 3px 1px #0000003a;
+      font-size: 1em;
+      transition: background-color 0.2s ease-in-out;
     }
 
-    .letter {
-      top: -80px;
-      transition: all 0.5s 0.5s ease; //delayed
+    .send {
+      background-color: #00b600;
+      color: #ffffff;
+
+      &:hover {
+        background-color: #3ee03e;
+      }
+    }
+
+    .dismiss {
+      background-color: #f70000;
+      color: #ffffff;
+
+      &:hover {
+        background-color: #e25454;
+      }
     }
   }
 
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-left: 150px solid transparent;
-    border-right: 150px solid #005be4;
-    border-top: 100px solid transparent;
-    border-bottom: 100px solid #0046af;
+  .mail {
+    width: 300px;
+    height: 200px;
+    background-color: #0066ff;
+    position: relative;
     border-radius: 0px 0px 10px 10px;
-    z-index: 5;
-  }
+    transform-style: preserve-3d;
 
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-left: 150px solid #0046af;
-    border-right: 150px solid transparent;
-    border-top: 100px solid transparent;
-    border-bottom: 100px solid #0046af;
-    border-radius: 0px 0px 10px 10px;
-    z-index: 4;
-  }
+    &:hover {
+      .cover:before {
+        transform: rotateX(180deg);
+        transition: all 0.5s ease;
+      }
 
-  .cover {
+      .letter {
+        top: -80px;
+        transition: all 0.5s 0.5s ease; //delayed
+      }
+    }
+
     &:before {
       content: "";
       position: absolute;
       top: 0;
       right: 0;
       border-left: 150px solid transparent;
-      border-right: 150px solid transparent;
-      border-top: 100px solid #3c81e7;
-      border-bottom: 100px solid transparent;
-      transform-origin: top;
-      transform: rotateX(0deg);
-      transition: all 0.5s 0.5s ease; //delayed
-      z-index: 6;
+      border-right: 150px solid #005be4;
+      border-top: 100px solid transparent;
+      border-bottom: 100px solid #0046af;
+      border-radius: 0px 0px 10px 10px;
+      z-index: 5;
     }
-  }
 
-  .letter {
-    position: absolute;
-    z-index: 3;
-    top: 0;
-    left: 10px;
-    background: #f8f8f8;
-    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.226);
-    width: 280px;
-    height: 180px;
-    border-radius: 20px;
-    transition: all 0.5s ease;
-    box-sizing: border-box;
-    padding: 20px 0px;
-
-    h1 {
+    &:after {
+      content: "";
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 3em;
-      color: #798992;
-      font-weight: 900;
+      top: 0;
+      right: 0;
+      border-left: 150px solid #0046af;
+      border-right: 150px solid transparent;
+      border-top: 100px solid transparent;
+      border-bottom: 100px solid #0046af;
+      border-radius: 0px 0px 10px 10px;
+      z-index: 4;
     }
 
-    input {
-      width: 250px;
-      height: 30px;
-      margin: 10px 5px;
-      color: #798992;
-      font-family: "Product Sans Regular";
-      background: transparent;
-      border: none;
-      border-bottom: #333 solid 2px;
+    .cover {
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        pointer-events: none;
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        border-top: 100px solid #3c81e7;
+        border-bottom: 100px solid transparent;
+        transform-origin: top;
+        transform: rotateX(0deg);
+        transition: all 0.5s 0.5s ease; //delayed
+        z-index: 6;
+      }
+    }
+
+    .letter {
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      left: 10px;
+      background: #f8f8f8;
+      box-shadow: 1px 1px 3px 1px #0000003a;
+      width: 280px;
+      height: 180px;
+      border-radius: 20px;
+      transition: all 0.5s ease;
+      box-sizing: border-box;
+      padding: 20px 0px;
+
+      h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3em;
+        color: #798992;
+        font-weight: 900;
+      }
+
+      input {
+        width: 200px;
+        height: 30px;
+        margin: 10px 5px;
+        color: #798992;
+        font-family: "Product Sans Regular";
+        background: transparent;
+        border: none;
+        border-bottom: #333 solid 2px;
+        padding: 0px 10px;
+        outline: none;
+        text-align: center;
+      }
     }
   }
 }

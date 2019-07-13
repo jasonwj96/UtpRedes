@@ -25,13 +25,21 @@ const Postcard = props => {
               id="emailInput"
               type="email"
               name="userEmail"
-              placeholder="brucewayne@gmail.com"
+              placeholder="utpredes@gmail.com"
               value={userEmail}
               onChange={handleEmailChange}
               onClick={handleEmailChange}
             />
           </form>
         </div>
+      </div>
+      <div className="buttons">
+        <button className="dismiss">
+          <i class="fas fa-times" />
+        </button>
+        <button className="send">
+          <i class="fas fa-check" />
+        </button>
       </div>
     </div>
   );
