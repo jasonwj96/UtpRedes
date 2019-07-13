@@ -41,26 +41,28 @@
       background: transparent;
       outline: none;
       cursor: pointer;
-      box-shadow: 1px 1px 3px 1px #0000003a;
-      font-size: 1em;
+      box-shadow: 1px 1px 3px 1px #00000067;
+      font-size: 1.2em;
       transition: background-color 0.2s ease-in-out;
     }
 
     .send {
-      background-color: #00b600;
-      color: #ffffff;
+      background-color: #fff;
+      color: #00b600;
 
       &:hover {
-        background-color: #3ee03e;
+        background-color: #00b600;
+        color: #fff;
       }
     }
 
     .dismiss {
-      background-color: #f70000;
-      color: #ffffff;
+      background-color: #fff;
+      color: #f70000;
 
       &:hover {
-        background-color: #e25454;
+        background-color: #f70000;
+        color: #fff;
       }
     }
   }
