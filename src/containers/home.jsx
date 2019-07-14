@@ -18,7 +18,7 @@ const Home = props => {
         <div className="welcome-info">
           <p className="welcome-title">Licenciatura en redes informáticas</p>
 
-          <div className="welcome-list">
+         <div className="welcome-list">
             <Link to="/inicio">Inicio</Link>
             <Link to="/inicio/eventos">Inicio/Eventos</Link>
             <Link to="/inicio/eventos/2019">Inicio/Eventos/2019</Link>

@@ -28,33 +28,28 @@ const Menu = props => {
         <div id="linkset">
           <div className="menu-link selected">
             <i className="fas fa-graduation-cap" />
-            <a href="../containers/home.jsx"></a>
-            <p>Inicio</p>
+            <a href="../containers/home.jsx"><p>Inicio</p></a>
+            
           </div>
           <div className="menu-link">
             <i className="far fa-calendar-alt" />
-            <a href="../containers/home.jsx"></a>
-            <p>Eventos</p>
+            <a href="../containers/home.jsx"><p>Eventos</p></a>        
           </div>
           <div className="menu-link">
             <i className="fas fa-user-tie" />
-            <a href="../containers/home.jsx"></a>
-            <p>Perfil de egresado</p>
+            <a href="../containers/home.jsx"><p>Perfil de egresado</p></a>            
           </div>
           <div className="menu-link">
             <i className="fas fa-briefcase" />
-            <a href="../containers/home.jsx"></a>
-            <p>Campo laboral</p>
+            <a href="../containers/home.jsx"><p>Campo laboral</p></a>            
           </div>
           <div className="menu-link">
             <i className="fas fa-question-circle" />
-            <a href="../containers/home.jsx"></a>
-            <p>Ayuda</p>
+            <a href="../containers/home.jsx"><p>Ayuda</p></a>            
           </div>
           <div className="menu-link">
             <i className="fas fa-users" />
-            <a href="../containers/home.jsx"></a>
-            <p>Creditos</p>
+            <a href="../containers/home.jsx"><p>Creditos</p></a>           
           </div>
         </div>
       </div>
