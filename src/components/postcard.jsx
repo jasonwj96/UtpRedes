@@ -19,7 +19,7 @@ const Postcard = props => {
       <div className="mail">
         <div className="cover" />
         <div className="letter">
-          <p>Introduzca su correo:</p>
+          <p>Solicite más información:</p>
           <form onSubmit={e => e.preventDefault()}>
             <input
               id="emailInput"
@@ -35,10 +35,10 @@ const Postcard = props => {
       </div>
       <div className="buttons">
         <button className="dismiss">
-          <i class="fas fa-times" />
+          <i className="fas fa-times" />
         </button>
         <button className="send">
-          <i class="fas fa-check" />
+          <i className="fas fa-check" />
         </button>
       </div>
     </div>
