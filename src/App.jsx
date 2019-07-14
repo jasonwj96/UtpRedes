@@ -15,7 +15,8 @@ const App = () => {
         <Breadcrumbs />
         <Redirect from="/" to="/inicio" />
         <Route path="/inicio" component={Home} />
-         {/* <--- ahi puse una nota */}    <Route path="/inicio/materias" component={Materias} />
+         {/* <--- ahi puse una nota */}    
+         <Route path="/inicio/materias" component={Materias} />
         {/* <Postcard /> */}
       </Router>
 

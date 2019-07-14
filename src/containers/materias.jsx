@@ -6,7 +6,6 @@ const Materias = props => {
   return (
     <div className="home-container">
       <div className="welcome-container">
-
         <div className="welcome-info">
           <p className="welcome-title">Licenciatura en redes</p>
           <div className="welcome-footer">
