@@ -64,7 +64,7 @@
       display: flex;
       flex-flow: column;
       width: 100%;
-      padding: 10px;
+      padding: 10px 0px 10px 10px;
 
       .menu-link {
         display: flex;
@@ -74,8 +74,11 @@
         margin: 5px 0px;
         transition: 0.2s all ease-out;
         cursor: pointer;
-
-        border-radius: 4px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: #000;
+        border-radius: 50px 0 0 50px;
 
         i {
           margin-right: 10px;
@@ -88,14 +91,14 @@
         }
 
         &:hover {
-          background-color: #9835da1c;
-          color: #8800d6;
+          background-color: #003f5c2f;
+          color: $secondary;
         }
       }
 
       .selected {
-        background-color: #9835da1c;
-        color: #8800d6;
+        background-color: #003f5c2f;
+        color: $secondary;
       }
     }
   }
