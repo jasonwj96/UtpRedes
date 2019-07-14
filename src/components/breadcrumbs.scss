@@ -2,16 +2,30 @@
 
 .breadcrumbs-container {
   box-sizing: border-box;
-  width: auto;
-  margin: 0px 20px;
+  width: 100%;
+  margin: 0px;
   border-bottom: 1px solid #0000003b;
+  background-color: #fff;
   display: flex;
   padding: 0px 20px;
   font-family: "Product Sans Regular";
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  z-index: 9;
 
   .items {
     display: flex;
-    margin: 0 auto;
+    box-sizing: border-box;
+    height: auto;
+
+    .home {
+      i {
+        color: $accent;
+        font-size: 1.4em;
+      }
+    }
 
     .bc-item {
       margin: 5px 10px;
@@ -20,11 +34,15 @@
       display: flex;
       align-items: center;
       border-radius: 4px;
+      width: fit-content;
+      height: 20px;
     }
 
     .link {
       padding: 10px;
       transition: 0.2s background-color ease-in-out;
+      display: flex;
+      width: fit-content;
 
       &:hover {
         background-color: #33333317;
@@ -37,6 +55,20 @@
       font-weight: bold;
       display: flex;
       align-items: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .breadcrumbs-container {
+    width: 100%;
+    padding: 0;
+
+    .items {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      width: auto;
+      padding: 0px 10px;
     }
   }
 }

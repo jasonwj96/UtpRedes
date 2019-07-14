@@ -12,11 +12,13 @@ const Breadcrumbs = props => {
       const newPath = [];
       //starts at 1 to avoid the first null value
       for (let i = 1; i < path.length; i++) {
-        newPath.push(path[i]);
+        if (path[i] !== "Inicio") {
+          newPath.push(path[i]);
 
-        //Only add separators for more than 2 links
-        if (path.length > 2 && path[i + 1] != null) {
-          newPath.push("/");
+          //Only add separators for more than 2 links
+          if (path.length > 2 && path[i + 1] != null) {
+            newPath.push("/");
+          }
         }
       }
       return newPath;
@@ -49,6 +51,12 @@ const Breadcrumbs = props => {
         {items.map((item, i) => {
           if (item === "/")
             return <i key={i} className="fas fa-chevron-right separator" />;
+          if (item === "inicio")
+            return (
+              <Link key={i} to="/inicio" className="bc-item link home">
+                <i className="fas fa-home" />
+              </Link>
+            );
           else {
             return (
               <Link key={i} to={buildItemRoute(i)} className="bc-item link">
