@@ -31,7 +31,7 @@ const Menu = props => {
             <p>Inicio</p>
           </div>
           <div className="menu-link">
-            <i class="fas fa-university" />
+            <i class="fas fa-university"></i>
             <p>Acerca de la carrera</p>
           </div>
           <div className="menu-link">
@@ -47,15 +47,15 @@ const Menu = props => {
             <p>Perfil de egresado</p>
           </div>
           <div className="menu-link">
-            <i class="fas fa-briefcase" />
+          <i class="fas fa-briefcase"></i>
             <p>Campo laboral</p>
           </div>
           <div className="menu-link">
-            <i class="fas fa-question-circle" />
+          <i class="fas fa-question-circle"></i>
             <p>Ayuda</p>
           </div>
-          <div className="menu-link">
-            <i class="fas fa-users" />
+           <div className="menu-link">
+           <i class="fas fa-users"></i>
             <p>Creditos</p>
           </div>
           <div className="menu-link">
@@ -69,8 +69,8 @@ const Menu = props => {
           {showMenu ? (
             <i className="fas fa-arrow-left" />
           ) : (
-            <i className="fas fa-bars" />
-          )}
+              <i className="fas fa-bars" />
+            )}
         </button>
       </div>
     </div>
