@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./menu.scss";
 import logo from "../img/logo.jpg";
+import { Link} from "react-router-dom";
 
 const Menu = props => {
   const [showMenu, setShowMenu] = useState(false);
@@ -28,28 +29,35 @@ const Menu = props => {
         <div id="linkset">
           <div className="menu-link selected">
             <i className="fas fa-graduation-cap" />
-            <a href="../containers/home.jsx"><p>Inicio</p></a>
-            
+            <Link to="../containers/home.jsx">Inicio</Link>
           </div>
           <div className="menu-link">
             <i className="far fa-calendar-alt" />
-            <a href="../containers/home.jsx"><p>Eventos</p></a>        
+            <Link to="../containers/home.jsx"><p>Acerca de la carrera</p></Link>        
+          </div>
+          <div className="menu-link">
+            <i className="far fa-calendar-alt" />
+            <Link to="../containers/home.jsx"><p>Materias</p></Link>        
+          </div>
+          <div className="menu-link">
+            <i className="far fa-calendar-alt" />
+            <Link to="../containers/home.jsx"><p>Eventos</p></Link>        
           </div>
           <div className="menu-link">
             <i className="fas fa-user-tie" />
-            <a href="../containers/home.jsx"><p>Perfil de egresado</p></a>            
+            <Link to="../containers/home.jsx"><p>Perfil de egresado</p></Link>         
           </div>
           <div className="menu-link">
             <i className="fas fa-briefcase" />
-            <a href="../containers/home.jsx"><p>Campo laboral</p></a>            
+            <Link to="../containers/home.jsx"><p>Campo laboral</p></Link>            
           </div>
           <div className="menu-link">
             <i className="fas fa-question-circle" />
-            <a href="../containers/home.jsx"><p>Ayuda</p></a>            
+            <Link to="../containers/home.jsx"><p>Ayuda</p></Link>            
           </div>
           <div className="menu-link">
             <i className="fas fa-users" />
-            <a href="../containers/home.jsx"><p>Creditos</p></a>           
+            <Link to="../containers/home.jsx"><p>Creditos</p></Link>           
           </div>
         </div>
       </div>
