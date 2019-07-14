@@ -8,6 +8,7 @@
   bottom: 25px;
   right: 25px;
   font-family: "Product Sans Regular";
+  z-index: 9;
 
   &:hover {
     .postcard-msg {
@@ -70,7 +71,7 @@
   .mail {
     width: 300px;
     height: 200px;
-    background-color: #0066ff;
+    background-color: #534d2c;
     position: relative;
     border-radius: 0px 0px 10px 10px;
     transform-style: preserve-3d;
@@ -93,9 +94,9 @@
       top: 0;
       right: 0;
       border-left: 150px solid transparent;
-      border-right: 150px solid #005be4;
+      border-right: 150px solid #f1d430;
       border-top: 100px solid transparent;
-      border-bottom: 100px solid #0046af;
+      border-bottom: 100px solid #ffc400;
       border-radius: 0px 0px 10px 10px;
       z-index: 5;
     }
@@ -105,10 +106,10 @@
       position: absolute;
       top: 0;
       right: 0;
-      border-left: 150px solid #0046af;
+      border-left: 150px solid #ffc400;
       border-right: 150px solid transparent;
       border-top: 100px solid transparent;
-      border-bottom: 100px solid #0046af;
+      border-bottom: 100px solid #ffc400;
       border-radius: 0px 0px 10px 10px;
       z-index: 4;
     }
@@ -122,7 +123,7 @@
         pointer-events: none;
         border-left: 150px solid transparent;
         border-right: 150px solid transparent;
-        border-top: 100px solid #3c81e7;
+        border-top: 100px solid #bdac10;
         border-bottom: 100px solid transparent;
         transform-origin: top;
         transform: rotateX(0deg);
