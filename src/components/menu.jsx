@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./menu.scss";
 import logo from "../img/logo.jpg";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Menu = props => {
   const [showMenu, setShowMenu] = useState(false);
@@ -27,38 +27,45 @@ const Menu = props => {
       <div id="main">
         <img id="menu-logo" src={logo} alt="logo" />
         <div id="linkset">
-          <div className="menu-link selected">
-            <i className="fas fa-graduation-cap" />
-            <Link to="./inicio">Inicio</Link>
-          </div>
-          <div className="menu-link">
-          <i class="fas fa-university"></i>
-            <Link to="./home.jsx"><p>Acerca de la carrera</p></Link>        
-          </div>
-          <div className="menu-link">
-          <i class="fas fa-book"></i>
-            <Link to="./inicio/materias"><p>Materias</p></Link>        
-          </div>
-          <div className="menu-link">
+          <Link className="menu-link selected" to="/inicio">
+            <i className="fas fa-home" />
+            <p>Inicio</p>
+          </Link>
+
+          <Link className="menu-link" to="/inicio/Acerca de la carrera">
+            <i class="fas fa-university" />
+            <p>Acerca de la carrera</p>
+          </Link>
+
+          <Link className="menu-link" to="/inicio/Materias">
+            <i class="fas fa-book" />
+            <p>Materias</p>
+          </Link>
+
+          <Link className="menu-link" to="/inicio/Eventos">
             <i className="far fa-calendar-alt" />
-            <Link to="./home.jsx"><p>Eventos</p></Link>        
-          </div>
-          <div className="menu-link">
+            <p>Eventos</p>
+          </Link>
+
+          <Link className="menu-link" to="/inicio/Perfil de egresado">
             <i className="fas fa-user-tie" />
-            <Link to="./home.jsx"><p>Perfil de egresado</p></Link>         
-          </div>
-          <div className="menu-link">
+            <p>Perfil de egresado</p>
+          </Link>
+
+          <Link className="menu-link" to="/inicio/Campo laboral">
             <i className="fas fa-briefcase" />
-            <Link to="./home.jsx"><p>Campo laboral</p></Link>            
-          </div>
-          <div className="menu-link">
+            <p>Campo laboral</p>
+          </Link>
+
+          <Link className="menu-link" to="/inicio/Ayuda">
             <i className="fas fa-question-circle" />
-            <Link to="./home.jsx"><p>Ayuda</p></Link>            
-          </div>
-          <div className="menu-link">
+            <p>Ayuda</p>
+          </Link>
+
+          <Link className="menu-link" to="/inicio/Creditos">
             <i className="fas fa-users" />
-            <Link to="./home.jsx"><p>Creditos</p></Link>           
-          </div>
+            <p>Creditos</p>
+          </Link>
         </div>
       </div>
       <div onClick={toggleMenu} id="tab">
