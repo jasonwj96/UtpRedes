@@ -37,7 +37,7 @@ const Menu = props => {
           </div>
           <div className="menu-link">
           <i class="fas fa-book"></i>
-            <Link to="../containers/home.jsx"><p>Materias</p></Link>        
+            <Link to="../containers/materias.jsx"><p>Materias</p></Link>        
           </div>
           <div className="menu-link">
             <i className="far fa-calendar-alt" />
