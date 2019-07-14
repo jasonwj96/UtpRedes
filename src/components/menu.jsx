@@ -32,11 +32,11 @@ const Menu = props => {
             <Link to="../containers/home.jsx">Inicio</Link>
           </div>
           <div className="menu-link">
-            <i className="far fa-calendar-alt" />
+          <i class="fas fa-university"></i>
             <Link to="../containers/home.jsx"><p>Acerca de la carrera</p></Link>        
           </div>
           <div className="menu-link">
-            <i className="far fa-calendar-alt" />
+          <i class="fas fa-book"></i>
             <Link to="../containers/home.jsx"><p>Materias</p></Link>        
           </div>
           <div className="menu-link">
