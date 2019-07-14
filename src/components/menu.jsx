@@ -28,34 +28,42 @@ const Menu = props => {
         <div id="linkset">
           <div className="menu-link selected">
             <i className="fas fa-graduation-cap" />
-            <a href="../containers/home.jsx"><p>Inicio</p></a>
+            <a href="../containers/home.jsx"></a>
+            <p>Inicio</p>
           </div>
           <div className="menu-link">
             <i class="fas fa-university"></i>
+            <a href="../containers/home.jsx"></a>
             <p>Acerca de la carrera</p>
           </div>
           <div className="menu-link">
             <i className="fas fa-book" />
+            <a href="../containers/home.jsx"></a>
             <p>Materias</p>
           </div>
           <div className="menu-link">
             <i className="far fa-calendar-alt" />
+            <a href="../containers/home.jsx"></a>
             <p>Eventos</p>
           </div>
           <div className="menu-link">
             <i className="fas fa-user-tie" />
+            <a href="../containers/home.jsx"></a>
             <p>Perfil de egresado</p>
           </div>
           <div className="menu-link">
           <i class="fas fa-briefcase"></i>
+            <a href="../containers/home.jsx"></a>
             <p>Campo laboral</p>
           </div>
           <div className="menu-link">
           <i class="fas fa-question-circle"></i>
+            <a href="../containers/home.jsx"></a>
             <p>Ayuda</p>
           </div>
            <div className="menu-link">
            <i class="fas fa-users"></i>
+            <a href="../containers/home.jsx"></a>
             <p>Creditos</p>
           </div>
         </div>
