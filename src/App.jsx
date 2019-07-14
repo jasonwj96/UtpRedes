@@ -2,14 +2,9 @@ import React from "react";
 import "./App.scss";
 import Menu from "./components/menu";
 import Breadcrumbs from "./components/breadcrumbs";
-import {
-  BrowserRouter as Router,
-  Route,
-  Redirect,
-  Switch
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 import Home from "./containers/home";
-import Postcard from "./components/postcard";
+// import Postcard from "./components/postcard";
 
 const App = () => {
   return (
