@@ -14,8 +14,8 @@ const App = () => {
         <Menu />
         <Breadcrumbs />
         <Redirect from="/" to="/inicio" />
-        <Route path="/inicio" component={Home} />
-        <Route path="/materias" component={Materias} />
+        <Route exact path="/inicio" component={Home} />
+        <Route  path="/inicio/materias" component={Materias} />
         {/* <Postcard /> */}
       </Router>
     </div>

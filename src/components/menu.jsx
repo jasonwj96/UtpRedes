@@ -32,37 +32,37 @@ const Menu = props => {
             <p>Inicio</p>
           </Link>
 
-          <Link className="menu-link" to="/inicio/Acerca de la carrera">
+          <Link className="menu-link" to="/Acerca de la carrera">
             <i class="fas fa-university" />
             <p>Acerca de la carrera</p>
           </Link>
 
-          <Link className="menu-link" to="/inicio/Materias">
+          <Link className="menu-link" to="/inicio/materias">
             <i class="fas fa-book" />
             <p>Materias</p>
           </Link>
 
-          <Link className="menu-link" to="/inicio/Eventos">
+          <Link className="menu-link" to="/Eventos">
             <i className="far fa-calendar-alt" />
             <p>Eventos</p>
           </Link>
 
-          <Link className="menu-link" to="/inicio/Perfil de egresado">
+          <Link className="menu-link" to="/Perfil de egresado">
             <i className="fas fa-user-tie" />
             <p>Perfil de egresado</p>
           </Link>
 
-          <Link className="menu-link" to="/inicio/Campo laboral">
+          <Link className="menu-link" to="/Campo laboral">
             <i className="fas fa-briefcase" />
             <p>Campo laboral</p>
           </Link>
 
-          <Link className="menu-link" to="/inicio/Ayuda">
+          <Link className="menu-link" to="/Ayuda">
             <i className="fas fa-question-circle" />
             <p>Ayuda</p>
           </Link>
 
-          <Link className="menu-link" to="/inicio/Creditos">
+          <Link className="menu-link" to="/Creditos">
             <i className="fas fa-users" />
             <p>Creditos</p>
           </Link>
