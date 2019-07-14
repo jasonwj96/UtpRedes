@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./home.scss";
 
 const Home = props => {
@@ -17,19 +17,7 @@ const Home = props => {
         />
         <div className="welcome-info">
           <p className="welcome-title">Licenciatura en redes informáticas</p>
-
-         <div className="welcome-list">
-            <Link to="/inicio">Inicio</Link>
-            <Link to="/inicio/eventos">Inicio/Eventos</Link>
-            <Link to="/inicio/eventos/2019">Inicio/Eventos/2019</Link>
-            <Link to="/inicio/eventos/2019/julio">
-              Inicio/Eventos/2019/julio
-            </Link>
-            <Link to="/inicio/eventos/2019/julio/feria de empleo">
-              Inicio/Eventos/2019/julio/feria de empleo
-            </Link>
-          </div>
-
+         
           <div className="welcome-footer">
             <div className="icon">
               <i className="fas fa-clock" />

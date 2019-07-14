@@ -29,35 +29,35 @@ const Menu = props => {
         <div id="linkset">
           <div className="menu-link selected">
             <i className="fas fa-graduation-cap" />
-            <Link to="../containers/home.jsx">Inicio</Link>
+            <Link to="./Inicio">Inicio</Link>
           </div>
           <div className="menu-link">
           <i class="fas fa-university"></i>
-            <Link to="../containers/home.jsx"><p>Acerca de la carrera</p></Link>        
+            <Link to="./home.jsx"><p>Acerca de la carrera</p></Link>        
           </div>
           <div className="menu-link">
           <i class="fas fa-book"></i>
-            <Link to="../containers/materias.jsx"><p>Materias</p></Link>        
+            <Link to="./Materias"><p>Materias</p></Link>        
           </div>
           <div className="menu-link">
             <i className="far fa-calendar-alt" />
-            <Link to="../containers/home.jsx"><p>Eventos</p></Link>        
+            <Link to="./home.jsx"><p>Eventos</p></Link>        
           </div>
           <div className="menu-link">
             <i className="fas fa-user-tie" />
-            <Link to="../containers/home.jsx"><p>Perfil de egresado</p></Link>         
+            <Link to="./home.jsx"><p>Perfil de egresado</p></Link>         
           </div>
           <div className="menu-link">
             <i className="fas fa-briefcase" />
-            <Link to="../containers/home.jsx"><p>Campo laboral</p></Link>            
+            <Link to="./home.jsx"><p>Campo laboral</p></Link>            
           </div>
           <div className="menu-link">
             <i className="fas fa-question-circle" />
-            <Link to="../containers/home.jsx"><p>Ayuda</p></Link>            
+            <Link to="./home.jsx"><p>Ayuda</p></Link>            
           </div>
           <div className="menu-link">
             <i className="fas fa-users" />
-            <Link to="../containers/home.jsx"><p>Creditos</p></Link>           
+            <Link to="./home.jsx"><p>Creditos</p></Link>           
           </div>
         </div>
       </div>
