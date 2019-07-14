@@ -41,32 +41,26 @@
       background: transparent;
       outline: none;
       cursor: pointer;
-      box-shadow: 1px 1px 3px 1px #00000067;
-      font-size: 1.4em;
+      box-shadow: 1px 1px 3px 1px #0000003a;
+      font-size: 1em;
       transition: background-color 0.2s ease-in-out;
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      align-items: center;
     }
 
     .send {
-      background-color: #fff;
-      color: #00b600;
+      background-color: #00b600;
+      color: #ffffff;
 
       &:hover {
-        background-color: #00b600;
-        color: #fff;
+        background-color: #3ee03e;
       }
     }
 
     .dismiss {
-      background-color: #fff;
-      color: #f70000;
+      background-color: #f70000;
+      color: #ffffff;
 
       &:hover {
-        background-color: #f70000;
-        color: #fff;
+        background-color: #e25454;
       }
     }
   }

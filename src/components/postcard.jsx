@@ -35,10 +35,10 @@ const Postcard = props => {
       </div>
       <div className="buttons">
         <button className="dismiss">
-          <i className="fas fa-times" />
+          <i class="fas fa-times" />
         </button>
         <button className="send">
-          <i className="fas fa-check" />
+          <i class="fas fa-check" />
         </button>
       </div>
     </div>
