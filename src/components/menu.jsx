@@ -58,10 +58,6 @@ const Menu = props => {
             <i className="fas fa-users" />
             <p>Creditos</p>
           </div>
-          <div className="menu-link">
-            <i className="fas fa-users" />
-            <p>hola mundo2</p>
-          </div>
         </div>
       </div>
       <div onClick={toggleMenu} id="tab">
