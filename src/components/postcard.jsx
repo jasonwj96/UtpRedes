@@ -19,7 +19,7 @@ const Postcard = props => {
       <div className="mail">
         <div className="cover" />
         <div className="letter">
-          <p>Introduzca su correo:</p>
+          <p>Solicite más información:</p>
           <form onSubmit={e => e.preventDefault()}>
             <input
               id="emailInput"
