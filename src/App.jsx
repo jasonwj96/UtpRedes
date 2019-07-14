@@ -21,8 +21,8 @@ const App = () => {
       <Router>
         <Menu />
         <Breadcrumbs />
-        <Redirect from="/" to="/Materias" />
-        <Route path="/Materias" component={Materias} />
+        <Redirect from="/" to="/materias" />
+        <Route path="/materias" component={Materias} />
         {/* <Postcard /> */}
       </Router>
     </div>

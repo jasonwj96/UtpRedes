@@ -2,7 +2,7 @@ import React from "react";
 // import { Link } from "react-router-dom";
 import "./home.scss";
 
-const Home = props => {
+const Materias = props => {
   return (
     <div className="home-container">
       {/* <Link to="/inicio">Inicio</Link>
