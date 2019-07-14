@@ -47,20 +47,22 @@
     }
 
     .send {
-      background-color: #00b600;
-      color: #ffffff;
+      background-color: #fff;
+      color: #00b600;
 
       &:hover {
-        background-color: #3ee03e;
+        background-color: #00b600;
+        color: #fff;
       }
     }
 
     .dismiss {
-      background-color: #f70000;
-      color: #ffffff;
+      background-color: #fff;
+      color: #f70000;
 
       &:hover {
-        background-color: #e25454;
+        background-color: #f70000;
+        color: #fff;
       }
     }
   }
@@ -142,6 +144,9 @@
       transition: all 0.5s ease;
       box-sizing: border-box;
       padding: 20px 0px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
 
       h1 {
         position: absolute;
@@ -151,6 +156,7 @@
         font-size: 3em;
         color: #798992;
         font-weight: 900;
+        text-align: center;
       }
 
       input {

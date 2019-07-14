@@ -7,24 +7,24 @@ const Breadcrumbs = props => {
   const [items, setItems] = useState(["Home"]);
 
   useEffect(() => {
+    const splitPath = () => {
+      let path = currentPath.split("/");
+      const newPath = [];
+      //starts at 1 to avoid the first null value
+      for (let i = 1; i < path.length; i++) {
+        newPath.push(path[i]);
+
+        //Only add separators for more than 2 links
+        if (path.length > 2 && path[i + 1] != null) {
+          newPath.push("/");
+        }
+      }
+      return newPath;
+    };
+
     setItems(splitPath());
     setCurrentPath(props.location.pathname);
   }, [props.location.pathname, items, currentPath]);
-
-  const splitPath = () => {
-    let splitPath = currentPath.split("/");
-    const newPath = [];
-    //starts at 1 to avoid the first null value
-    for (let i = 1; i < splitPath.length; i++) {
-      newPath.push(splitPath[i]);
-
-      //Only add separators for more than 2 links
-      if (splitPath.length > 2 && splitPath[i + 1] != null) {
-        newPath.push("/");
-      }
-    }
-    return newPath;
-  };
 
   const buildItemRoute = i => {
     let itemRoute = "/";

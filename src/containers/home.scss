@@ -7,19 +7,24 @@ html {
 }
 
 .home-container {
-  background-image: url("../img/utp_background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  // filter: brightness(0.5);
   display: flex;
   flex-flow: column;
   width: 100%;
   height: calc(100vh - 50px);
   z-index: 0;
 
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/utp_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.3);
+    width: 100%;
+    height: calc(100vh - 50px);
+  }
+
   iframe {
-    width: 500px;
-    height: 350px;
     margin: auto 100px;
     z-index: 1;
   }
