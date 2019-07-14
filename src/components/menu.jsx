@@ -29,7 +29,7 @@ const Menu = props => {
         <div id="linkset">
           <div className="menu-link selected">
             <i className="fas fa-graduation-cap" />
-            <Link to="./Inicio">Inicio</Link>
+            <Link to="./inicio">Inicio</Link>
           </div>
           <div className="menu-link">
           <i class="fas fa-university"></i>
