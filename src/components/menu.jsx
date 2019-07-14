@@ -31,7 +31,7 @@ const Menu = props => {
             <p>Inicio</p>
           </div>
           <div className="menu-link">
-            <i className="fas fa-university" />
+            <i class="fas fa-university" />
             <p>Acerca de la carrera</p>
           </div>
           <div className="menu-link">
@@ -47,16 +47,20 @@ const Menu = props => {
             <p>Perfil de egresado</p>
           </div>
           <div className="menu-link">
-            <i className="fas fa-briefcase" />
+            <i class="fas fa-briefcase" />
             <p>Campo laboral</p>
           </div>
           <div className="menu-link">
-            <i className="fas fa-question-circle" />
+            <i class="fas fa-question-circle" />
             <p>Ayuda</p>
           </div>
           <div className="menu-link">
-            <i className="fas fa-users" />
+            <i class="fas fa-users" />
             <p>Creditos</p>
+          </div>
+          <div className="menu-link">
+            <i class="fas fa-users" />
+            <p>hola mundo2</p>
           </div>
         </div>
       </div>
