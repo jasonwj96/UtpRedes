@@ -12,15 +12,36 @@ const Home = props => {
       <Link to="/inicio/eventos/2019/julio/feria de empleo">
         Inicio/Eventos/2019/julio/feria de empleo
       </Link> */}
-      <iframe
-        title="UTP Panama Intro"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/oznPAZNJu9o"
-        frameBorder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      />
+      <div className="welcome-container">
+        <iframe
+          title="UTP Panama Intro"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/oznPAZNJu9o"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+        <div className="welcome-info">
+          <p className="welcome-title">Licenciatura en redes</p>
+          <div className="welcome-footer">
+            <div className="icon">
+              <i class="far fa-clock" />
+              <p>
+                Duración: <br /> 4 años
+              </p>
+            </div>
+            <div className="icon">
+              <i class="far fa-building" />
+              <p>Gran oportunidad laboral</p>
+            </div>
+            <div className="icon">
+              <i class="fas fa-graduation-cap" />
+              <p>1000+ egresados</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

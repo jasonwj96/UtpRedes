@@ -1,9 +1,11 @@
 // Global
-$accent: #8800d6;
+$accent: #006391;
 
 // Breadcrumb component
 $bc-item-color: #202124;
 $separator-color: $accent;
+
+//
 
 @mixin card {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.219);
