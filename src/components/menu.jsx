@@ -28,23 +28,35 @@ const Menu = props => {
         <div id="linkset">
           <div className="menu-link selected">
             <i className="fas fa-graduation-cap" />
-            <p>Oferta academica</p>
+            <p>Inicio</p>
           </div>
           <div className="menu-link">
-            <i className="far fa-calendar-alt" />
-            <p>Eventos</p>
-          </div>
-          <div className="menu-link">
-            <i className="fas fa-briefcase" />
-            <p>Campo laboral</p>
+            <i class="fas fa-university" />
+            <p>Acerca de la carrera</p>
           </div>
           <div className="menu-link">
             <i className="fas fa-book" />
             <p>Materias</p>
           </div>
           <div className="menu-link">
+            <i className="far fa-calendar-alt" />
+            <p>Eventos</p>
+          </div>
+          <div className="menu-link">
             <i className="fas fa-user-tie" />
-            <p>Funcionarios</p>
+            <p>Perfil de egresado</p>
+          </div>
+          <div className="menu-link">
+            <i class="fas fa-briefcase" />
+            <p>Campo laboral</p>
+          </div>
+          <div className="menu-link">
+            <i class="fas fa-question-circle" />
+            <p>Ayuda</p>
+          </div>
+          <div className="menu-link">
+            <i class="fas fa-users" />
+            <p>Creditos</p>
           </div>
         </div>
       </div>
@@ -53,8 +65,8 @@ const Menu = props => {
           {showMenu ? (
             <i className="fas fa-arrow-left" />
           ) : (
-              <i className="fas fa-bars" />
-            )}
+            <i className="fas fa-bars" />
+          )}
         </button>
       </div>
     </div>
