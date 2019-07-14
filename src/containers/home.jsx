@@ -26,17 +26,17 @@ const Home = props => {
           <p className="welcome-title">Licenciatura en redes</p>
           <div className="welcome-footer">
             <div className="icon">
-              <i class="far fa-clock" />
+              <i className="fas fa-clock" />
               <p>
                 Duración: <br /> 4 años
               </p>
             </div>
             <div className="icon">
-              <i class="far fa-building" />
+              <i className="fas fa-building" />
               <p>Gran oportunidad laboral</p>
             </div>
             <div className="icon">
-              <i class="fas fa-graduation-cap" />
+              <i className="fas fa-graduation-cap" />
               <p>1000+ egresados</p>
             </div>
           </div>
