@@ -37,7 +37,7 @@ const Menu = props => {
             <p>Acerca de la carrera</p>
           </Link>
 
-          <Link className="menu-link" to="/inicio/materias">
+          <Link className="menu-link" to="/inicio/Primer año">
             <i class="fas fa-book" />
             <p>Materias</p>
           </Link>
