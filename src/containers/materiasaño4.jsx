@@ -84,13 +84,7 @@ const Materias4 = props => {
                 <td colspan="2" width="50">3</td>
                 <td colspan="2" width="50">2</td>
                 <td colspan="2" width="34">4</td>
-              </tr>   
-              <tr>
-                <td colspan="3" width="219">Tópicos Especiales I</td>
-                <td colspan="2" width="50">2</td>
-                <td colspan="2" width="50">2</td>
-                <td colspan="2" width="34">3</td>
-              </tr>       
+              </tr>                 
               </tbody>
           </table>
 
