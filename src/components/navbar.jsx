@@ -35,7 +35,7 @@ const Navbar = () => {
       </Link>
 
       <Link className="menu-link" to="/inicio/Creditos">
-        <p>Creditos</p>
+        <p>Créditos</p>
       </Link>
     </div>
   );

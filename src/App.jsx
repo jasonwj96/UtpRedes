@@ -1,6 +1,5 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "./App.scss";
-import Menu from "./components/menu";
 import Breadcrumbs from "./components/breadcrumbs";
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 import Home from "./containers/home";
@@ -16,18 +15,18 @@ const App = () => {
   return (
     <div className="App">
       <Router>
-        {/* <Menu /> */}
         <Redirect from="/" to="/inicio" />
         <div className="screen-container">
           <Breadcrumbs />
           <Navbar />
-          <Route exact path="/inicio" component={Home} />
-          <Route path="/inicio/Primer año" component={Materias} />
-          <Route path="/inicio/Segundo año" component={Materias2} />
-          <Route path="/inicio/Tercer año" component={Materias3} />
-          <Route path="/inicio/Cuarto año" component={Materias4} />
+          <Suspense fallback={<p>Loading....</p>}>
+            <Route exact path="/inicio" component={Home} />
+            <Route path="/inicio/Primer año" component={Materias} />
+            <Route path="/inicio/Segundo año" component={Materias2} />
+            <Route path="/inicio/Tercer año" component={Materias3} />
+            <Route path="/inicio/Cuarto año" component={Materias4} />
+          </Suspense>
         </div>
-        {/* <Postcard /> */}
       </Router>
     </div>
   );

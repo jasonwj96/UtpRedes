@@ -1,8 +1,8 @@
 // Global
 $accent: #006391;
-$secondary: #004fa8;
-$screen-container-width: 1200px;
-$screen-container-height: auto;
+$secondary: lighten($accent, 20%);
+$screen-container-width: 100%;
+$screen-container-height: 100%;
 
 // Breadcrumb component
 $bc-item-color: #202124;
@@ -11,8 +11,9 @@ $separator-color: $accent;
 //Navbar
 $navbar-height: auto;
 $navbar-bg: #fff;
-$link-width: fit-content;
-$link-hover-bg: #00639149;
+$link-width: 150px;
+$link-hover-bg: #006391fd;
+$link-hover-color: #fff;
 $link-color: #333;
 
 @mixin card {
