@@ -6,7 +6,7 @@ const WelcomePanel = () => {
     <div className="welcomePanel-container">
       <div className="welcome-info">
         <p className="welcome-title">Licenciatura en redes informáticas</p>
-        <ul>
+        <ul className="welcome-list">
           <p>asdasddsdsddsad</p>
           <p>asdasddsdsddsad</p>
           <p>asdasddsdsddsad</p>

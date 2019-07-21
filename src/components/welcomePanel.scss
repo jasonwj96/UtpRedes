@@ -2,32 +2,23 @@
 
 .welcomePanel-container {
   @include card();
-
-  box-sizing: border-box;
-  z-index: 1;
   display: flex;
-  height: auto;
+  height: fit-content;
   width: auto;
-  // justify-content: space-evenly;
   align-items: center;
   overflow: hidden;
   border-radius: 10px;
 
-  iframe {
-    margin: auto 0;
-    border-radius: 10px;
-  }
-
   .welcome-info {
     background-color: #ffffff;
     width: 400px;
-    height: 100%;
+    height: auto;
     max-height: 550px;
     border-radius: 10px;
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     box-sizing: border-box;
     overflow: hidden;
 
@@ -42,17 +33,23 @@
     .welcome-list {
       display: flex;
       flex-flow: column;
+      height: auto;
+      width: 100%;
       text-align: center;
+      margin: 0;
+      padding: 0;
+      font-size: 0.8em;
     }
 
     .welcome-footer {
       box-sizing: border-box;
       background-color: $accent;
       display: flex;
+      justify-self: flex-end;
       width: 100%;
       height: auto;
       justify-content: space-evenly;
-      padding: 10px;
+      padding: 10px 10px 0px 10px;
 
       .icon {
         display: flex;
