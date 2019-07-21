@@ -1,0 +1,32 @@
+@import "./themes/light_theme";
+
+.App {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: url("./img/utp_background.jpg") no-repeat left center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.3);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+
+  .screen-container {
+    width: $screen-container-width;
+    height: $screen-container-height;
+    margin: 100px auto;
+    height: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 1;
+  }
+}

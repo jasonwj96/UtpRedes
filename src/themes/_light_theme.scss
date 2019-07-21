@@ -1,12 +1,18 @@
 // Global
 $accent: #006391;
 $secondary: #004fa8;
+$screen-container-width: 900px;
+$screen-container-height: 1000px;
 
 // Breadcrumb component
 $bc-item-color: #202124;
 $separator-color: $accent;
 
-//
+//Navbar
+$navbar-height: auto;
+$link-width: 150px;
+$link-hover-bg: #00639149;
+$link-color: #333;
 
 @mixin card {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.219);

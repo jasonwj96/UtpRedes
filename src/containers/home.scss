@@ -3,23 +3,22 @@
 .home-container {
   display: flex;
   flex-flow: column;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+  width: auto;
+  height: auto;
   padding: 50px 0px 0px 0px;
   margin: 0;
 
-  &::before {
-    position: absolute;
-    content: "";
-    background: url("../img/utp_background.jpg") no-repeat left center fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(0.3);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-  }
+  // &::before {
+  //   position: absolute;
+  //   content: "";
+  //   background: url("../img/utp_background.jpg") no-repeat left center fixed;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   filter: brightness(0.3);
+  //   width: 100%;
+  //   height: 100%;
+  //   position: fixed;
+  // }
 }
 
 @media only screen and (max-width: 600px) {

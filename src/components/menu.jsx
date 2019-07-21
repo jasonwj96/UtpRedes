@@ -33,12 +33,12 @@ const Menu = props => {
           </Link>
 
           <Link className="menu-link" to="/inicio/Acerca de la carrera">
-            <i class="fas fa-university" />
+            <i className="fas fa-university" />
             <p>Acerca de la carrera</p>
           </Link>
 
           <Link className="menu-link" to="/inicio/Primer año">
-            <i class="fas fa-book" />
+            <i className="fas fa-book" />
             <p>Materias</p>
           </Link>
 
