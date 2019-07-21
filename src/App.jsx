@@ -16,7 +16,7 @@ const App = () => {
   return (
     <div className="App">
       <Router>
-        <Menu />
+        {/* <Menu /> */}
         <Redirect from="/" to="/inicio" />
         <div className="screen-container">
           <Breadcrumbs />

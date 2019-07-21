@@ -1,8 +1,8 @@
 // Global
 $accent: #006391;
 $secondary: #004fa8;
-$screen-container-width: 900px;
-$screen-container-height: 1000px;
+$screen-container-width: 1200px;
+$screen-container-height: auto;
 
 // Breadcrumb component
 $bc-item-color: #202124;
@@ -10,7 +10,8 @@ $separator-color: $accent;
 
 //Navbar
 $navbar-height: auto;
-$link-width: 150px;
+$navbar-bg: #fff;
+$link-width: fit-content;
 $link-hover-bg: #00639149;
 $link-color: #333;
 

@@ -21,12 +21,13 @@
   }
 
   .screen-container {
+    overflow: hidden;
     width: $screen-container-width;
-    height: $screen-container-height;
-    margin: 100px auto;
+    max-height: $screen-container-height;
+    margin: 20px auto;
     height: auto;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     z-index: 1;
   }
 }
