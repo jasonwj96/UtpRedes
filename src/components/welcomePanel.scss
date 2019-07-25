@@ -13,7 +13,6 @@
     background-color: #ffffff;
     width: 400px;
     height: auto;
-    max-height: 550px;
     border-radius: 10px;
     display: flex;
     flex-flow: column;
@@ -35,10 +34,47 @@
       flex-flow: column;
       height: auto;
       width: 100%;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-      font-size: 0.8em;
+      margin: 20px 0 0 0;
+      padding: 0 0 0 30px;
+      font-size: 0.9em;
+
+      li {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+        i {
+          color: $terciary;
+          font-size: 0.6em;
+          margin: 0 10px 0 0;
+        }
+
+        p {
+          margin: 10px 0;
+        }
+      }
+    }
+
+    .home-btn {
+      margin: 20px 0;
+      @include card();
+      background-color: $terciary;
+      color: #ffffff;
+      border: none;
+      outline: none;
+      width: 200px;
+      height: 30px;
+      padding: 5px;
+      border-radius: 50px;
+      cursor: pointer;
+      font-family: "Product Sans Regular";
+      letter-spacing: 1px;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #fff;
+        color: $terciary;
+      }
     }
 
     .welcome-footer {
@@ -79,46 +115,6 @@
           text-align: center;
           font-size: 0.8em;
           margin: 10px 0px;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .welcome-container {
-    flex-flow: column;
-    height: 100%;
-    justify-content: flex-start;
-
-    iframe {
-      width: 100%;
-      height: 200px;
-      margin: 5px;
-    }
-
-    .welcome-info {
-      width: 100%;
-      height: 100%;
-      min-height: 500px;
-      margin: 10px 5px 0px 5px;
-
-      .welcome-title {
-        margin: 20px;
-        font-size: 1.2em;
-      }
-
-      .welcome-footer {
-        height: auto;
-
-        .icon {
-          width: 50px;
-
-          i {
-            width: 40px;
-            height: 40px;
-            font-size: 1.3em;
-          }
         }
       }
     }
