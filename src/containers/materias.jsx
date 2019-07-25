@@ -53,26 +53,26 @@ const Materias = props => {
             <table>
               <tbody>
                 <tr>
-                  <td colspan="9" width="354">
+                  <td colspan="9" >
                     <strong>Segundo Semestre</strong>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="3" width="219">
+                  <td colspan="3" >
                     <strong>Asignatura</strong>
                   </td>
-                  <td colspan="2" width="50">
+                  <td colspan="2" >
                     <strong>Horas de clase</strong>
                   </td>
-                  <td colspan="2" width="50">
+                  <td colspan="2" >
                     <strong>Horas de lab.</strong>
                   </td>
-                  <td colspan="2" width="34">
+                  <td colspan="2" >
                     <strong>Créditos</strong>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="3" width="219">
+                  <td colspan="3" >
                     Programación Aplicada I
                   </td>
                   <td colspan="2" width="50">
@@ -114,16 +114,16 @@ const Materias = props => {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="3" width="219">
+                  <td colspan="3">
                     Circuitos Lógicos
                   </td>
-                  <td colspan="2" width="50">
+                  <td colspan="2" >
                     3
                   </td>
-                  <td colspan="2" width="50">
+                  <td colspan="2" >
                     2
                   </td>
-                  <td colspan="2" width="34">
+                  <td colspan="2">
                     4
                   </td>
                 </tr>
