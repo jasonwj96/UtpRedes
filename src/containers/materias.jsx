@@ -11,120 +11,132 @@ const Materias = props => {
           <div className="tables">
             <table>
               <tbody>
-                <tr>
-                  <td colspan="9">
+                <tr className="semesters">
+                  <td colSpan="9">
                     <strong>Primer Semestre</strong>
                   </td>
                 </tr>
-                <tr>
-                  <td colspan="3">
+                <tr className="titles">
+                  <td colSpan="3">
                     <strong>Asignatura</strong>
                   </td>
-                  <td colspan="2">
+                  <td colSpan="2" className="credits">
                     <strong>Horas de clase</strong>
                   </td>
-                  <td colspan="2">
+                  <td colSpan="2" className="credits">
                     <strong>Horas de lab.</strong>
                   </td>
-                  <td colspan="2">
+                  <td colSpan="2" className="credits">
                     <strong>Créditos</strong>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="3">Tecnología de Información y Comunicación</td>
-                  <td colspan="2">5</td>
-                  <td colspan="2">5</td>
-                  <td colspan="2">4</td>
+                  <td colSpan="3">Tecnología de Información y Comunicación</td>
+                  <td colSpan="2" className="credits">
+                    5
+                  </td>
+                  <td colSpan="2" className="credits">
+                    5
+                  </td>
+                  <td colSpan="2" className="credits">
+                    4
+                  </td>
                 </tr>
                 <tr>
-                  <td colspan="3">Desarrollo Lógico y Algoritmos</td>
-                  <td colspan="2">5</td>
-                  <td colspan="2">5</td>
-                  <td colspan="2">4</td>
+                  <td colSpan="3">Desarrollo Lógico y Algoritmos</td>
+                  <td colSpan="2" className="credits">
+                    5
+                  </td>
+                  <td colSpan="2" className="credits">
+                    5
+                  </td>
+                  <td colSpan="2" className="credits">
+                    4
+                  </td>
                 </tr>
                 <tr>
-                  <td colspan="3">Fundamentos De Electricidad</td>
-                  <td colspan="2">5</td>
-                  <td colspan="2">5</td>
-                  <td colspan="2">4</td>
+                  <td colSpan="3">Fundamentos De Electricidad</td>
+                  <td colSpan="2" className="credits">
+                    5
+                  </td>
+                  <td colSpan="2" className="credits">
+                    5
+                  </td>
+                  <td colSpan="2" className="credits">
+                    4
+                  </td>
                 </tr>
               </tbody>
             </table>
 
             <table>
               <tbody>
-                <tr>
-                  <td colspan="9" >
+                <tr className="semesters">
+                  <td colSpan="9">
                     <strong>Segundo Semestre</strong>
                   </td>
                 </tr>
-                <tr>
-                  <td colspan="3" >
+                <tr className="titles">
+                  <td colSpan="3">
                     <strong>Asignatura</strong>
                   </td>
-                  <td colspan="2" >
+                  <td colSpan="2" className="credits">
                     <strong>Horas de clase</strong>
                   </td>
-                  <td colspan="2" >
+                  <td colSpan="2" className="credits">
                     <strong>Horas de lab.</strong>
                   </td>
-                  <td colspan="2" >
+                  <td colSpan="2" className="credits">
                     <strong>Créditos</strong>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="3" >
-                    Programación Aplicada I
-                  </td>
-                  <td colspan="2" width="50">
+                  <td colSpan="3">Programación Aplicada I</td>
+                  <td colSpan="2" className="credits">
                     3
                   </td>
-                  <td colspan="2" width="50">
+                  <td colSpan="2" className="credits">
                     2
                   </td>
-                  <td colspan="2" width="34">
+                  <td colSpan="2" className="credits">
                     4
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="3" width="219">
-                    Sistemas Colaborativos
-                  </td>
-                  <td colspan="2" width="50">
+                  <td colSpan="3">Sistemas Colaborativos</td>
+                  <td colSpan="2" className="credits">
                     3
                   </td>
-                  <td colspan="2" width="50">
+                  <td colSpan="2" className="credits">
                     1
                   </td>
-                  <td colspan="2" width="34">
+                  <td colSpan="2" className="credits">
                     3
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="3" width="219">
+                  <td colSpan="3">
                     Organización Y Arquitectura De Computación I
                   </td>
-                  <td colspan="2" width="50">
+                  <td colSpan="2" className="credits">
                     3
                   </td>
-                  <td colspan="2" width="50">
+                  <td colSpan="2" className="credits">
                     2
                   </td>
-                  <td colspan="2" width="34">
+                  <td colSpan="2" className="credits">
                     4
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="3">
-                    Circuitos Lógicos
-                  </td>
-                  <td colspan="2" >
+                  <td colSpan="3">Circuitos Lógicos</td>
+                  <td colSpan="2" className="credits">
                     3
                   </td>
-                  <td colspan="2" >
+                  <td colSpan="2" className="credits">
                     2
                   </td>
-                  <td colspan="2">
+                  <td colSpan="2" className="credits">
                     4
                   </td>
                 </tr>
@@ -133,12 +145,10 @@ const Materias = props => {
           </div>
 
           <div className="mat-footer">
-            <div className="icon">
-              <Link className="menu-link" to="/inicio/Segundo año">
-                <i class="fas fa-arrow-right" />
-                <p>Segundo Año</p>
-              </Link>
-            </div>
+            <Link className="menu-link" to="/inicio/Segundo año">
+              <i className="fas fa-arrow-right" />
+              <p>Segundo año</p>
+            </Link>
           </div>
         </div>
       </div>
