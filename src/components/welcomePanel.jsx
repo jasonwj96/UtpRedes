@@ -10,23 +10,23 @@ const WelcomePanel = () => {
         <ul className="welcome-list">
           <li>
             <i class="fas fa-circle" />
-            <p>Te ofrece instalaciones de alta tecnología</p>
+            <p>Instalaciones de alta tecnología</p>
           </li>
           <li>
             <i class="fas fa-circle" />
-            <p>Te ofrece instalaciones de alta tecnología</p>
+            <p>Docentes altamente capacitados</p>
           </li>
           <li>
             <i class="fas fa-circle" />
-            <p>Te ofrece instalaciones de alta tecnología</p>
+            <p>Grandes oportunidades laborales para egresados</p>
           </li>
           <li>
             <i class="fas fa-circle" />
-            <p>Te ofrece instalaciones de alta tecnología</p>
+            <p>Diploma con reconocimiento internacional.</p>
           </li>
           <li>
             <i class="fas fa-circle" />
-            <p>Te ofrece instalaciones de alta tecnología</p>
+            <p>Cafetería, librería, centros recreativos, y más.</p>
           </li>
         </ul>
         <Link to="/inicio/Acerca de la carrera">
