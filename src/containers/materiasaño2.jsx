@@ -75,6 +75,7 @@ const Materias2 = props => {
               </tbody>
           </table>
           </div>
+          
           <div className="mat-footer">
             
             <Link className="menu-link" to="/inicio/Primer año">
