@@ -1,6 +1,7 @@
 // Global
 $accent: #006391;
 $secondary: lighten($accent, 20%);
+$terciary: #ffc400;
 $screen-container-width: 100%;
 $screen-container-height: 100%;
 
@@ -15,6 +16,9 @@ $link-width: 150px;
 $link-hover-bg: #006391fd;
 $link-hover-color: #fff;
 $link-color: #333;
+
+//Materias
+$table-semester-color: $terciary;
 
 @mixin card {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.219);
