@@ -1,6 +1,5 @@
 import React from "react";
 import "./materias.scss";
-import "../Asignaturas/WebContent/Listar.jsp"
 import { Link } from "react-router-dom";
 
 const Materias = props => {
