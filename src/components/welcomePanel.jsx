@@ -1,5 +1,6 @@
 import React from "react";
 import "./welcomePanel.scss";
+import { Link } from "react-router-dom";
 
 const WelcomePanel = () => {
   return (
@@ -7,13 +8,31 @@ const WelcomePanel = () => {
       <div className="welcome-info">
         <p className="welcome-title">Licenciatura en redes informáticas</p>
         <ul className="welcome-list">
-          <p>asdasddsdsddsad</p>
-          <p>asdasddsdsddsad</p>
-          <p>asdasddsdsddsad</p>
-          <p>asdasddsdsddsad</p>
-          <p>asdasddsdsddsad</p>
-          <p>asdasddsdsddsad</p>
+          <li>
+            <i class="fas fa-circle" />
+            <p>Instalaciones de alta tecnología</p>
+          </li>
+          <li>
+            <i class="fas fa-circle" />
+            <p>Docentes altamente capacitados</p>
+          </li>
+          <li>
+            <i class="fas fa-circle" />
+            <p>Grandes oportunidades laborales para egresados</p>
+          </li>
+          <li>
+            <i class="fas fa-circle" />
+            <p>Diploma con reconocimiento internacional.</p>
+          </li>
+          <li>
+            <i class="fas fa-circle" />
+            <p>Cafetería, librería, centros recreativos, y más.</p>
+          </li>
         </ul>
+        <Link to="/inicio/Acerca de la carrera">
+          <button className="home-btn">Saber más</button>
+        </Link>
+
         <div className="welcome-footer">
           <div className="icon">
             <i className="fas fa-clock" />
