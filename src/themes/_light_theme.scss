@@ -13,9 +13,12 @@ $separator-color: $accent;
 $navbar-height: auto;
 $navbar-bg: #fff;
 $link-width: 150px;
-$link-hover-bg: rgba($accent, 0.2);
+// $link-hover-bg: rgba($accent, 0.2);
+$link-hover-bg: $accent;
 $link-hover-color: $accent;
+$link-hover-color: #fff;
 $link-hover-border-color: rgba($accent, 0.2);
+// $link-hover-border-color: $accent;
 $link-color: #333;
 
 //Materias
