@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./slideCircle.scss";
 import slide1 from "../img/slide1.jpg";
 
 const SlideCircle = () => {
+  const [show, setShow] = useState(false);
+
+  const showMore = e => {
+    show
+      ? (e.target.className = "expand")
+      : (e.target.className = "slideCircle-container");
+
+    setShow(!show);
+  };
+
+  useEffect(() => {
+    console.log("toggled");
+  }, [show]);
+
   return (
-    <div className="slideCircle-container">
+    <div className="slideCircle-container" onClick={showMore}>
       <img src={slide1} alt="" />
-      {/* <p className="expand-msg">Click aquí para expandir</p> */}
+
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis vitae
         dolorum nisi? Id similique molestias facilis asperiores tempore itaque,

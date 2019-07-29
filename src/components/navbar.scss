@@ -33,7 +33,7 @@
     border-radius: 50px;
     border: rgba(#000, 0.3) 1px solid;
     overflow: hidden;
-    transition: all 0.5s 0.15s ease-out;
+    transition: all 0.1s;
     position: relative;
 
     &::before {
@@ -58,6 +58,7 @@
       margin: auto 5px;
       font-size: 100%;
       z-index: 2;
+      transition: color 0.01s ease-out;
     }
 
     &:hover {

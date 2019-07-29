@@ -9,23 +9,23 @@ const WelcomePanel = () => {
         <p className="welcome-title">Licenciatura en redes informáticas</p>
         <ul className="welcome-list">
           <li>
-            <i class="fas fa-circle" />
+            <i className="fas fa-circle" />
             <p>Instalaciones de alta tecnología</p>
           </li>
           <li>
-            <i class="fas fa-circle" />
+            <i className="fas fa-circle" />
             <p>Docentes altamente capacitados</p>
           </li>
           <li>
-            <i class="fas fa-circle" />
+            <i className="fas fa-circle" />
             <p>Grandes oportunidades laborales para egresados</p>
           </li>
           <li>
-            <i class="fas fa-circle" />
+            <i className="fas fa-circle" />
             <p>Diploma con reconocimiento internacional.</p>
           </li>
           <li>
-            <i class="fas fa-circle" />
+            <i className="fas fa-circle" />
             <p>Cafetería, librería, centros recreativos, y más.</p>
           </li>
         </ul>

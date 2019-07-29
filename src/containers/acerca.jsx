@@ -6,6 +6,8 @@ const Acerca = () => {
   return (
     <div className="acerca-container">
       <SlideCircle />
+      <SlideCircle />
+      <SlideCircle />
     </div>
   );
 };
