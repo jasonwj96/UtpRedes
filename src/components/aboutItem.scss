@@ -10,13 +10,13 @@
   transition-duration: 1000ms;
   transition-timing-function: ease-in-out;
   flex-grow: 1;
+  cursor: pointer;
 
   img {
     width: auto;
     height: 100%;
     filter: brightness(50%);
     position: relative;
-    pointer-events: none;
     transition-property: filter;
     transition-duration: 500ms;
     transition-timing-function: ease-in-out;
@@ -35,12 +35,12 @@
     margin: 0;
     font-size: 1em;
   }
+}
 
-  &:hover {
-    width: 100%;
+.expand {
+  width: 100%;
 
-    img {
-      filter: none;
-    }
+  img {
+    filter: none;
   }
 }

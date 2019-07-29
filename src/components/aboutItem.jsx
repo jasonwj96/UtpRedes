@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./aboutItem.scss";
 import slide1 from "../img/slide1.jpg";
 
 const AboutItem = () => {
+  const [expand, setExpand] = useState(false);
+
+  const toggle = e => {
+    const container = e.target;
+
+    expand
+      ? (container.className = "aboutItem-container expand")
+      : (container.className = "aboutItem-container");
+
+    setExpand(!expand);
+  };
+
   return (
-    <div className="aboutItem-container">
+    <div className="aboutItem-container" onClick={toggle}>
       <img src={slide1} alt="" />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis vitae
