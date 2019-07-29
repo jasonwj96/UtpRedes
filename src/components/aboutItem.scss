@@ -1,41 +1,46 @@
 @import "../themes/light_theme";
 
 .aboutItem-container {
-  width: 300px;
+  width: 0px;
   height: auto;
-  border-radius: 5px;
   display: flex;
   background-color: darken($accent, 15%);
   overflow: hidden;
   transition-property: width;
-  transition-duration: 200ms;
+  transition-duration: 1000ms;
   transition-timing-function: ease-in-out;
-  flex-shrink: 1;
+  flex-grow: 1;
 
   img {
     width: auto;
     height: 100%;
-    margin: 0;
-    transition: transform 2ms ease-in-out;
     filter: brightness(50%);
     position: relative;
     pointer-events: none;
+    transition-property: filter;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
   }
 
   p {
-    pointer-events: none;
+    display: flex;
+    flex-flow: column;
     font-family: "Roboto";
-    color: #ffffff8f;
-    height: 0;
-    width: 0;
-    transition: all 200ms ease-in-out;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
     margin: 0;
-    opacity: 0;
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   &:hover {
-    width: 1000px;
-    flex-grow: 6;
+    width: 100%;
+
+    img {
+      filter: none;
+    }
   }
 }
