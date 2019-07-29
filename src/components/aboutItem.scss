@@ -10,6 +10,8 @@
   transition-duration: 1000ms;
   transition-timing-function: ease-in-out;
   flex-grow: 1;
+  cursor: pointer;
+
   img {
     width: auto;
     height: 100%;
@@ -21,24 +23,48 @@
     transition-timing-function: ease-in-out;
   }
 
-  p {
+  .info {
     display: flex;
     flex-flow: column;
-    font-family: "Roboto";
-    color: #fff;
-    height: 100%;
-    width: 100%;
-    padding: 30px;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    font-size: 1em;
-    pointer-events: none;
+
+    .close-btn {
+      @include card();
+      background: $terciary;
+      border-radius: 50%;
+      min-width: 40px;
+      min-height: 40px;
+      margin: 10px;
+      z-index: 100;
+      align-self: flex-end;
+      color: #fff;
+      border: none;
+
+      i {
+        font-size: 1.2em;
+        pointer-events: none;
+      }
+    }
+
+    p {
+      display: flex;
+      flex-flow: column;
+      font-family: "Roboto";
+      color: #fff;
+      height: 100%;
+      width: 100%;
+      padding: 30px;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      font-size: 1em;
+      pointer-events: none;
+    }
   }
 }
 
 .expand {
   width: 100%;
+  cursor: default;
 
   img {
     filter: none;
