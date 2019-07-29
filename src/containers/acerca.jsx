@@ -1,13 +1,18 @@
 import React from "react";
 import "./acerca.scss";
-import SlideCircle from "../components/slideCircle";
+import AboutItem from "../components/aboutItem";
 
 const Acerca = () => {
   return (
     <div className="acerca-container">
-      <SlideCircle />
-      {/* <SlideCircle />
-      <SlideCircle /> */}
+      <div className="grid">
+        <AboutItem />
+        <AboutItem />
+        <AboutItem />
+        <AboutItem />
+        <AboutItem />
+        <AboutItem />
+      </div>
     </div>
   );
 };
