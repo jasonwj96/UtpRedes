@@ -8,17 +8,49 @@
   overflow: hidden;
   transition-property: width;
   transition-duration: 1000ms;
-  transition-timing-function: ease-in-out;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   flex-grow: 1;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    img {
+      transition: transform 15s ease;
+      transform: translateX(-100px);
+    }
+  }
+
+  .overlay {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000b2;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 200ms ease-in-out;
+    flex-flow: column;
+
+    i {
+      font-size: 2em;
+    }
+
+    .overlay-text {
+      font-size: 1em;
+    }
+  }
 
   img {
     width: auto;
     height: 100%;
-    filter: brightness(50%);
     position: relative;
     pointer-events: none;
-    transition-property: filter;
+    transition-property: filter, transform;
     transition-duration: 500ms;
     transition-timing-function: ease-in-out;
   }
@@ -29,6 +61,7 @@
 
     .close-btn {
       @include card();
+      pointer-events: all;
       cursor: pointer;
       outline: none;
       background: $terciary;
@@ -53,7 +86,7 @@
       font-family: "Roboto";
       color: #fff;
       height: 100%;
-      width: 100%;
+      width: auto;
       padding: 30px;
       align-items: center;
       justify-content: center;
@@ -67,6 +100,17 @@
 .expand {
   width: 100%;
   cursor: default;
+  pointer-events: none;
+
+  .overlay {
+    background-color: transparent;
+    pointer-events: none;
+
+    i,
+    p {
+      visibility: hidden;
+    }
+  }
 
   img {
     filter: none;

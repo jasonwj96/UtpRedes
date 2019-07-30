@@ -15,10 +15,14 @@ const AboutItem = () => {
 
   return (
     <div className={className} onClick={toggle}>
+      <div className="overlay">
+        <i class="fas fa-university" />
+        <p className="overlay-text">Instalaciones</p>
+      </div>
       <img src={slide1} alt="" />
       <div className="info">
         <button className="close-btn" onClick={toggle}>
-          <i class="fas fa-compress-arrows-alt" />
+          <i className="fas fa-compress-arrows-alt" />
         </button>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
