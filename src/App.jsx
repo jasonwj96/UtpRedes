@@ -9,6 +9,7 @@ import Materias3 from "./containers/materiasaño3";
 import Materias4 from "./containers/materiasaño4";
 import Navbar from "./components/navbar";
 import Acerca from "./containers/acerca";
+import Eventos from "./containers/eventos";
 
 // import Postcard from "./components/postcard";
 
@@ -27,6 +28,7 @@ const App = () => {
             <Route path="/inicio/Segundo año" component={Materias2} />
             <Route path="/inicio/Tercer año" component={Materias3} />
             <Route path="/inicio/Cuarto año" component={Materias4} />
+            <Route path="/inicio/Eventos" component={Eventos} />
           </Suspense>
         </div>
       </Router>
