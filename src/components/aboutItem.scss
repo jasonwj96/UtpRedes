@@ -54,8 +54,8 @@
     height: auto;
     pointer-events: none;
     animation-name: imageAnim;
-    animation-duration: 20000ms;
-    animation-timing-function: ease;
+    animation-duration: 8000ms;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
   }

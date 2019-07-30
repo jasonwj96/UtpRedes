@@ -12,8 +12,7 @@ const Acerca = props => {
     },
     {
       imageUrl: "./slide2.jpg",
-      desc:
-        "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ea, sapiente similique delectus consequatur architecto aspernatur quia, beatae hic nisi fugiat, voluptas impedit? Reiciendis iusto beatae aliquam esse quam debitis ex et atque est perspiciatis reprehenderit nihil ullam earum exercitationem ipsa facere quasi nesciunt, cupiditate expedita neque minus eum! Assumenda placeat alias, hic eligendi voluptas voluptatum, reiciendis in porro facilis nostrum temporibus repellat perferendis unde! Quisquam quos voluptates maxime rerum voluptatibus minima veritatis dolores, adipisci molestiae tenetur sed, libero ea ullam officiis. Voluptatum sit, unde corporis a nobis, veritatis sed ipsum vero iusto sapiente illum. Repellat aperiam architecto vero est?",
+      desc: "Vas a trabajar aqui :D",
       overlayText: "Oportunidad laboral"
     },
     {
