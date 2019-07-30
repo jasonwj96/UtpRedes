@@ -30,6 +30,7 @@
     .close-btn {
       @include card();
       cursor: pointer;
+      outline: none;
       background: $terciary;
       border-radius: 50%;
       min-width: 40px;

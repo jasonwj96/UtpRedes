@@ -1,23 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./aboutItem.scss";
 import slide1 from "../img/slide1.jpg";
 
 const AboutItem = () => {
-  const expand = e => {
-    const container = e.target;
-    container.className = "aboutItem-container expand";
-  };
+  const [className, setClassName] = useState("aboutItem-container");
+  const [toggleItem, setToggleItem] = useState(false);
 
-  const collapse = e => {
-    const grandParent = e.target.parentNode.parentNode;
-    grandParent.className = "aboutItem-container";
+  const toggle = () => {
+    if (toggleItem) setClassName("aboutItem-container expand");
+    else setClassName("aboutItem-container");
+
+    setToggleItem(!toggleItem);
   };
 
   return (
-    <div className="aboutItem-container" onClick={expand}>
+    <div className={className} onClick={toggle}>
       <img src={slide1} alt="" />
       <div className="info">
-        <button className="close-btn" onClick={collapse}>
+        <button className="close-btn" onClick={toggle}>
           <i class="fas fa-compress-arrows-alt" />
         </button>
         <p>
