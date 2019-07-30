@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./aboutItem.scss";
 import slide1 from "../img/slide1.jpg";
 
