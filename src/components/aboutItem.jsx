@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./aboutItem.scss";
-import slide1 from "../img/slide1.jpg";
+import slide1 from "../img/slide2.jpg";
 
 const AboutItem = () => {
   const [className, setClassName] = useState("aboutItem-container");
