@@ -1,5 +1,11 @@
 @import "../themes/light_theme";
 
+@keyframes imageAnim {
+  to {
+    transform: translateX(-100px);
+  }
+}
+
 .aboutItem-container {
   width: 0px;
   height: auto;
@@ -16,8 +22,8 @@
 
   &:hover {
     img {
-      transition: transform 15s ease;
-      transform: translateX(-100px);
+      // transition: transform 5s ease-in-out;
+      // transform: translateX(-100px);
     }
   }
 
@@ -50,9 +56,14 @@
     height: 100%;
     position: relative;
     pointer-events: none;
-    transition-property: filter, transform;
-    transition-duration: 500ms;
-    transition-timing-function: ease-in-out;
+    // transition-property: filter, transform;
+    // transition-duration: 500ms;
+    // transition-timing-function: ease-in-out;
+    animation-name: imageAnim;
+    animation-duration: 20000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
 
   .info {
@@ -121,5 +132,6 @@
 
   img {
     filter: none;
+    animation-name: none;
   }
 }
