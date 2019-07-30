@@ -7,7 +7,7 @@ const Acerca = props => {
     {
       imageUrl: "./slide1.jpg",
       desc:
-        "La Universidad Tecnológica de Panamá brinda a sus estudiantes las mejores instalaciones para su vida universitaria. Como por ejemplo, acceso inalámbrico a internet mediante Wi-Fi, biblioteca con amplias áreas de trabajo, parque recreativo, gimnasio, entre otros.",
+        "La Universidad Tecnológica de Panamá brinda a todos sus estudiantes las mejores instalaciones para su vida universitaria. Como por ejemplo, acceso inalámbrico a internet mediante Wi-Fi, biblioteca con amplias áreas de trabajo, áreas recreativas, gimnasio, estacionamientos para estudiantes, entre otros.",
       overlayText: "Instalaciones"
     },
     {
@@ -23,13 +23,13 @@ const Acerca = props => {
       overlayText: "Reconocimiento internacional"
     },
     {
-      imageUrl: "./slide3.jpg",
+      imageUrl: "./slide4.jpg",
       desc:
         "La Universidad Tecnológica de Panamá cuenta con los educadores más experimentados.",
       overlayText: "Cuerpo docente"
     },
     {
-      imageUrl: "./slide6.jpg",
+      imageUrl: "./slide5.jpg",
       desc:
         "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ea, sapiente similique delectus consequatur architecto aspernatur quia, beatae hic nisi fugiat, voluptas impedit? Reiciendis iusto beatae aliquam esse quam debitis ex et atque est perspiciatis reprehenderit nihil ullam earum exercitationem ipsa facere quasi nesciunt, cupiditate expedita neque minus eum! Assumenda placeat alias, hic eligendi voluptas voluptatum, reiciendis in porro facilis nostrum temporibus repellat perferendis unde! Quisquam quos voluptates maxime rerum voluptatibus minima veritatis dolores, adipisci molestiae tenetur sed, libero ea ullam officiis. Voluptatum sit, unde corporis a nobis, veritatis sed ipsum vero iusto sapiente illum. Repellat aperiam architecto vero est?",
       overlayText: "Egresados"
