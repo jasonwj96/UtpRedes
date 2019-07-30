@@ -18,7 +18,7 @@ const Navbar = () => {
         <p>Materias</p>
       </Link>
 
-      <Link className="menu-link" to="/inicio/eventos">
+      <Link className="menu-link" to="/inicio/Eventos">
         <p>Eventos</p>
       </Link>
 
