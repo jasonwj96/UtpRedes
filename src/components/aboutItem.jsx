@@ -22,7 +22,7 @@ const AboutItem = () => {
       <img src={slide1} alt="" />
       <div className="info">
         <button className="close-btn" onClick={toggle}>
-          <i className="fas fa-compress-arrows-alt" />
+          <i className="fas fa-times" />
         </button>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
