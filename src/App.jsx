@@ -21,15 +21,13 @@ const App = () => {
         <div className="screen-container">
           <Breadcrumbs />
           <Navbar />
-          <Suspense fallback={<p>Loading....</p>}>
-            <Route exact path="/inicio" component={Home} />
-            <Route path="/inicio/Acerca de la carrera" component={Acerca} />
-            <Route path="/inicio/Primer año" component={Materias} />
-            <Route path="/inicio/Segundo año" component={Materias2} />
-            <Route path="/inicio/Tercer año" component={Materias3} />
-            <Route path="/inicio/Cuarto año" component={Materias4} />
-            <Route path="/inicio/Eventos" component={Eventos} />
-          </Suspense>
+          <Route exact path="/inicio" component={Home} />
+          <Route path="/inicio/Acerca de la carrera" component={Acerca} />
+          <Route path="/inicio/Primer año" component={Materias} />
+          <Route path="/inicio/Segundo año" component={Materias2} />
+          <Route path="/inicio/Tercer año" component={Materias3} />
+          <Route path="/inicio/Cuarto año" component={Materias4} />
+          <Route path="/inicio/Eventos" component={Eventos} />
         </div>
       </Router>
     </div>
