@@ -47,7 +47,7 @@ const Menu = props => {
             <p>Eventos</p>
           </Link>
 
-          <Link className="menu-link" to="/inicio/Perfil de egresado">
+          <Link className="menu-link" to="/inicio/Perfil_egresado">
             <i className="fas fa-user-tie" />
             <p>Perfil de egresado</p>
           </Link>
