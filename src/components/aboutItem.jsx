@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./aboutItem.scss";
 
 const AboutItem = props => {
@@ -7,12 +7,12 @@ const AboutItem = props => {
   const images = require.context("../img/assets/", true);
   const { imageUrl, overlayText, desc } = props;
 
-  const toggle = () => {
+  useEffect(() => {
     if (toggleItem) setClassName("aboutItem-container expand");
     else setClassName("aboutItem-container");
+  }, [toggleItem]);
 
-    setToggleItem(!toggleItem);
-  };
+  const toggle = () => setToggleItem(!toggleItem);
 
   const overlayIcon = () => {
     if (overlayText === "Instalaciones") {
