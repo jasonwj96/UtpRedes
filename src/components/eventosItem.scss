@@ -2,11 +2,12 @@
 
 @keyframes imageAnim {
   to {
-    transform: translateY(-100px);
+    transform: translateY(-300px);
   }
 }
 
 .eventosItem-container {
+  @include card();
   width: auto;
   height: 0px;
   display: flex;
@@ -31,19 +32,35 @@
     background-color: #000000b2;
     z-index: 2;
     display: flex;
-    padding: 10px 20px;
-    justify-content: center;
     transition: background-color 200ms ease-in-out;
-    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 
-    .overlay-desc {
-      font-size: 1em;
-      font-weight: bold;
+    .overlay-text {
+      width: 100%;
+      height: fit-content;
+      padding: 10px 20px;
+
+      flex-flow: row;
+
+      p.overlay-desc {
+        margin: auto 0;
+        font-size: 1.3em;
+        font-family: "Roboto";
+      }
     }
 
     .overlay-date {
+      font-family: "Roboto";
+      transition-property: background-color;
+      transition-duration: 200ms;
+      transition-timing-function: ease-in-out;
+      background-color: $terciary;
       font-size: 1em;
       font-weight: bold;
+      height: 100%;
+      width: 200px;
+      padding: 10px;
     }
 
     &:hover {
@@ -89,11 +106,6 @@
       align-self: flex-end;
       color: #fff;
       border: none;
-
-      i {
-        font-size: 1.2em;
-        pointer-events: none;
-      }
     }
 
     p {
@@ -121,9 +133,13 @@
     background-color: transparent;
     pointer-events: none;
 
-    i,
-    p {
-      visibility: hidden;
+    .overlay-text {
+      .overlay-desc {
+      }
+    }
+
+    .overlay-date {
+      background-color: transparent;
     }
   }
 

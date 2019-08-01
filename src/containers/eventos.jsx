@@ -12,8 +12,7 @@ const Eventos = () => {
       organizadores:
         "Universidad Tecnológica de Panamá. Universidad de Panamá. Universidad Autónoma de Chiriquí",
       contacto: "www.clei2019.utp.ac.pa",
-      desc:
-        "La conferencia latinoamericana de informatica CLEI 2019, incluye 9 simposios, 4 eventos asociados y un evento invitado.      "
+      desc: "La conferencia latinoamericana de informatica CLEI 2019"
     },
     {
       imageUrl: "./evento1.jpeg",
@@ -23,19 +22,27 @@ const Eventos = () => {
       organizadores:
         "Universidad Tecnológica de Panamá. Universidad de Panamá. Universidad Autónoma de Chiriquí",
       contacto: "www.clei2019.utp.ac.pa",
-      desc:
-        "La conferencia latinoamericana de informatica CLEI 2019, incluye 9 simposios, 4 eventos asociados y un evento invitado.      "
+      desc: "La conferencia latinoamericana de informatica CLEI 2019"
     },
-
     {
       imageUrl: "./evento1.jpeg",
+
       fecha: "Lunes, Septiembre 30 hasta Octubre 3 del 2019",
       lugar: "Hotel Wyndham Albrook Mall - Ciudad de Panamá",
       organizadores:
         "Universidad Tecnológica de Panamá. Universidad de Panamá. Universidad Autónoma de Chiriquí",
       contacto: "www.clei2019.utp.ac.pa",
-      desc:
-        "La conferencia latinoamericana de informatica CLEI 2019, incluye 9 simposios, 4 eventos asociados y un evento invitado.      "
+      desc: "La conferencia latinoamericana de informatica CLEI 2019"
+    },
+    {
+      imageUrl: "./evento1.jpeg",
+
+      fecha: "Lunes, Septiembre 30 hasta Octubre 3 del 2019",
+      lugar: "Hotel Wyndham Albrook Mall - Ciudad de Panamá",
+      organizadores:
+        "Universidad Tecnológica de Panamá. Universidad de Panamá. Universidad Autónoma de Chiriquí",
+      contacto: "www.clei2019.utp.ac.pa",
+      desc: "La conferencia latinoamericana de informatica CLEI 2019"
     }
   ];
 

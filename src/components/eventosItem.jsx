@@ -17,9 +17,11 @@ const EventosItem = props => {
   return (
     <div className={className} onClick={toggle}>
       <div className="overlay">
-        <div className="overla">
+        <div className="overlay-text">
           <p className="overlay-desc">{desc}</p>
-          <p className="overlay-date">{fecha}</p>
+        </div>
+        <div className="overlay-date">
+          <p>{fecha}</p>
         </div>
       </div>
       <img src={images(`${imageUrl}`)} alt="" />
@@ -28,6 +30,10 @@ const EventosItem = props => {
           <i className="fas fa-times" />
         </button>
         <p>{desc}</p>
+        <p>{fecha}</p>
+        <p>{lugar}</p>
+        <p>{organizadores}</p>
+        <p>{contacto}</p>
       </div>
     </div>
   );
