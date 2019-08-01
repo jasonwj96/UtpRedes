@@ -7,6 +7,7 @@ import Materias from "./containers/materias";
 import Materias2 from "./containers/materiasaño2";
 import Materias3 from "./containers/materiasaño3";
 import Materias4 from "./containers/materiasaño4";
+import CampoLaboral from "./containers/campolaboral";
 import Navbar from "./components/navbar";
 
 // import Postcard from "./components/postcard";
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="/inicio/Segundo año" component={Materias2} />
             <Route path="/inicio/Tercer año" component={Materias3} />
             <Route path="/inicio/Cuarto año" component={Materias4} />
+            <Route path="/inicio/Campo Laboral" component={CampoLaboral} />
           </Suspense>
         </div>
       </Router>
