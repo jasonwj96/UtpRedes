@@ -1,12 +1,50 @@
 @import "../themes/light_theme";
 
+@keyframes zoomInOut {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}
+
 .campolaboral-container {
   display: flex;
   width: 100%;
   height: 100%;
-  justify-content: flex-end;
+  justify-content: space-around;
   font-size: 1em;
-  flex-flow: column;
+  padding: 20px 50px;
+  align-items: center;
+
+  .campolaboral-info {
+    @include card();
+    display: flex;
+    flex-flow: column;
+    border-radius: 10px;
+    width: 300px;
+    height: fit-content;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      animation-duration: 5000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+      position: relative;
+    }
+
+    p {
+      position: relative;
+      z-index: 2;
+      padding: 10px;
+    }
+  }
 
   .accordion {
     @include card;
@@ -16,6 +54,6 @@
     flex-flow: column;
     width: auto;
     height: 100%;
-    margin: 20px 40px 80px 40px;
+    margin: 20px 0px;
   }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./campolaboral.scss";
 import EmpleoItem from "../components/empleoItem";
+import teclado from "../img/assets/teclado.jpeg";
 
 const CampoLaboral = () => {
   const empleos = [
@@ -44,6 +45,16 @@ const CampoLaboral = () => {
 
   return (
     <div className="campolaboral-container">
+      <div className="campolaboral-info">
+        <img src={teclado} alt="teclado" />
+        <p>
+          <img src="" alt="" />
+          Los estudiantes egresados de la carrera de Licenciatura en redes,
+          tienen una de las mejores oportunidades laborales con las mejores
+          prestaciones. Selecciona alguna de las siguientes plazas de trabajo
+          para saber más:
+        </p>
+      </div>
       <div className="accordion">
         {empleos.map((item, index) => {
           return (

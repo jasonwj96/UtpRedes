@@ -14,10 +14,10 @@ const EmpleoItem = props => {
   const toggle = () => setToggleItem(!toggleItem);
 
   return (
-    <div className={className} onClick={toggle}>
+    <div className={className}>
       <div className="header">
         <p className="title">{title}</p>
-        <div className="toggle">
+        <div className="toggle" onClick={toggle}>
           <i className="fas fa-chevron-down" />
         </div>
       </div>
