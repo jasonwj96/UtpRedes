@@ -9,7 +9,7 @@ const CampoLaboral = props => {
         <p>
         Los administradores de redes informáticas desarrollan, soportan y mantienen a las redes informáticas 
         de las empresas. Una red es un grupo de ordenadores conectados entre sí, por lo general, a través de un 
-        ordenador potente llamado servidor central.<p>Salario aproximado: $ 1000.00 – $ 1500.00</p>
+        ordenador potente llamado servidor central.<p>Salario aproximado: $1500.00</p>
          </p>
       </section>
       <section id ="Item 2">
@@ -17,7 +17,7 @@ const CampoLaboral = props => {
         <p>
        Los ingenieros de telecomunicaciones son expertos en tecnología de las comunicaciones. Se encargan del diseño, 
          investigación y desarrollo de sistemas de comunicaciones por cable y satélite, teléfonos móviles, 
-         ondas de radio, Internet y correo electrónico.<p>Salario aproximado: $1500.00</p>
+         ondas de radio, Internet y correo electrónico.<p>Salario aproximado: $1500.00 </p>
          </p>
       </section>
       <section id ="Item 3">
@@ -25,7 +25,7 @@ const CampoLaboral = props => {
         <p>
         Los técnicos informáticos de servicios de soporte trabajan en colaboración con ingenieros informáticos y ayudan a 
         los clientes o compañeros de trabajo a hacer funciona equipamientos informáticos. 
-        <p>Salario aproximado: $1200.00</p>
+        <p>Salario aproximado: $ 1200.00</p>
          </p>
       </section>
       <section id ="Item 4">
@@ -40,7 +40,7 @@ const CampoLaboral = props => {
         <p>
         Los ingenieros informáticos de hardware trabajan en el diseño, desarrollo y fabricación de equipamientos 
         informáticos. Se especializan en áreas tales como las comunicaciones, los sistemas de control, la robótica,
-         los microprocesadores o los dispositivos semiconductores.<p>Salario aproximado: $2000.00</p> 
+         los microprocesadores o los dispositivos semiconductores. <p>Salario aproximado: $2000.00</p>
          </p>
       </section>
       <section id ="Item 6">
