@@ -6,14 +6,38 @@ const CampoLaboral = props => {
     <div className="campolaboral-container">
       <div className="accordion">
         <div className="accordionItem">
-          <p className="title">Administrador de redes informáticas</p>
-          <p className="desc">
-            Los administradores de redes informáticas desarrollan, soportan y
-            mantienen a las redes informáticas de las empresas. Una red es un
-            grupo de ordenadores conectados entre sí, por lo general, a través
-            de un ordenador potente llamado servidor central.
-            <div className="salario">Salario aproximado: $1500.00</div>
-          </p>
+          <div className="header">
+            <p className="title">Administrador de redes informáticas</p>
+            <div className="toggle">
+              <i className="fas fa-chevron-down" />
+            </div>
+          </div>
+          <div className="desc">
+            <p>
+              Los administradores de redes informáticas desarrollan, soportan y
+              mantienen a las redes informáticas de las empresas. Una red es un
+              grupo de ordenadores conectados entre sí, por lo general, a través
+              de un ordenador potente llamado servidor central.
+            </p>
+          </div>
+          <div className="salario">Salario aproximado: $1500.00</div>
+        </div>
+        <div className="accordionItem">
+          <div className="header">
+            <p className="title">Administrador de redes informáticas</p>
+            <div className="toggle">
+              <i className="fas fa-chevron-down" />
+            </div>
+          </div>
+          <div className="desc">
+            <p>
+              Los administradores de redes informáticas desarrollan, soportan y
+              mantienen a las redes informáticas de las empresas. Una red es un
+              grupo de ordenadores conectados entre sí, por lo general, a través
+              de un ordenador potente llamado servidor central.
+            </p>
+          </div>
+          <div className="salario">Salario aproximado: $1500.00</div>
         </div>
         {/* <div id="Item 2">
         <h1>Ingeniero de telecomunicaciones</h1>
