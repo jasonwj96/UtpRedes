@@ -7,7 +7,7 @@ const EmpleoItem = props => {
   const { salario, title, desc } = props;
 
   useEffect(() => {
-    if (toggleItem) setClassName("empleoItem-container expand");
+    if (toggleItem) setClassName("empleoItem-container expandEmpleo");
     else setClassName("empleoItem-container");
   }, [toggleItem]);
 

@@ -1,11 +1,5 @@
 @import "../themes/light_theme";
 
-@keyframes flipIcon {
-  to {
-    transform: rotate(180deg);
-  }
-}
-
 .campolaboral-container {
   display: flex;
   width: 100%;
@@ -22,6 +16,6 @@
     flex-flow: column;
     width: auto;
     height: 100%;
-    margin: 20px 40px;
+    margin: 20px 40px 80px 40px;
   }
 }

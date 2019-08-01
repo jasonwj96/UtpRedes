@@ -1,7 +1,8 @@
 import React from "react";
 import "./campolaboral.scss";
 import EmpleoItem from "../components/empleoItem";
-const CampoLaboral = props => {
+
+const CampoLaboral = () => {
   const empleos = [
     {
       title: "Administrador de redes informáticas",
