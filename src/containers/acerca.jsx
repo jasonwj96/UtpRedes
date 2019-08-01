@@ -25,7 +25,7 @@ const Acerca = props => {
     {
       imageUrl: "./slide4.jpg",
       desc:
-        "La Universidad Tecnológica de Panamá cuenta con los educadores más experimentados.",
+        "La Universidad Tecnológica de Panamá cuenta con los educadores más experimentados en diversas áreas de la enseñanza, dispuestos a atender todas las necesidades que tengan sus estudiantes.",
       overlayText: "Cuerpo docente"
     },
     {

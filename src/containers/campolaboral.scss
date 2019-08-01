@@ -1,193 +1,55 @@
 @import "../themes/light_theme";
 
-.materias-container {
+.campolaboral-container {
   display: flex;
-  flex-flow: column;
-  width: auto;
-  height: auto;
-  margin: 0;
-
-  .mat-container {
-    box-sizing: border-box;
-    z-index: 1;
-    display: flex;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-
-    .mat-info {
-      background-color: #ffffff;
-      width: auto;
-      height: 100%;
-      max-height: 550px;
-      border-radius: 10px;
-      display: flex;
-      flex-flow: column;
-      box-sizing: border-box;
-      overflow: hidden;
-
-      .tables {
-        display: flex;
-        width: auto;
-        height: auto;
-      }
-
-      table {
-        margin: 20px 10px;
-        width: auto;
-      }
-      
-
-      .mat-title {
-        text-align: center;
-        font-weight: 100;
-        font-size: 1.4em;
-        color: #161616;
-        margin: 10px 5px;
-      }
-
-      .mat-list {
-        display: flex;
-        flex-flow: column;
-        text-align: center;
-      }
-
-      .mat-footer {
-        box-sizing: border-box;
-        background-color: $accent;
-        display: flex;
-        width: 100%;
-        height: auto;
-        justify-content: space-evenly;
-        padding: 5px;
-
-        .icon {
-          display: flex;
-          width: auto;
-          flex-flow: column;
-
-          .menu-link {
-            text-decoration: none;
-          }
-
-          i {
-            margin: 0 auto;
-            text-align: center;
-            width: 50px;
-            height: 50px;
-            padding: 5px;
-            background-color: #ffffff;
-            color: $accent;
-            border-radius: 50%;
-            display: flex;
-            flex-flow: column;
-            font-size: 1.7em;
-            align-items: center;
-            justify-content: center;
-          }
-
-          p {
-            color: #ffffff;
-            text-align: center;
-            font-size: 0.9em;
-            margin: 10px 0px;
-            
-          }
-          
-        }
-      }
-    }
-  }
-
-
-
-@media only screen and (max-width: 600px) {
-  .materias-container {
-    height: 100%;
-
-    &::before {
-      height: 100%;
-      overflow: hidden;
-    }
-
-    .mat-container {
-      flex-flow: column;
-      height: 100%;
-      justify-content: flex-start;
-
-      iframe {
-        width: 100%;
-        height: 200px;
-        margin: 5px;
-      }
-
-      .mat-info {
-        width: 100%;
-        height: 100%;
-        min-height: 500px;
-        margin: 10px 5px 0px 5px;
-
-        .mat-title {
-          margin: 20px;
-          font-size: 1.2em;
-        }
-
-        .mat-footer {
-          height: auto;
-
-          .icon {
-            width: 50px;
-
-            i {
-              width: 40px;
-              height: 40px;
-              font-size: 1.3em;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-}
-
-#Accordion {
-  display: flex;
-  flex-direction: column;
-  background-color:#ffa60080;
-  margin-top: 70px;
-  margin-left: 750px;
-  width: 35%;
-  //margin: 20px, 10px;
+  width: 100%;
+  height: 100%;
   justify-content: flex-end;
-  font-size: 12px;
-  border-radius: 5%;
-  border-bottom: solid 2px #aaa;
-}
-#Accordion section p {
-  background-color: #ffffff;
-   text-align: left;
-   display:none;
-   border-block-color: #333;
-  padding-left: 10px;
-  font-size: 14px;
-}
+  font-size: 1em;
+  flex-flow: column;
 
-#Accordion section a {
-  color: #161616;
-  text-decoration: none;
-  
-}
+  .accordion {
+    @include card;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    width: auto;
+    height: 100%;
+    margin: 20px;
 
-#Accordion section a:hover {
-  color:#ffffff;
-  
-}
+    .accordionItem {
+      height: auto;
+      flex-grow: 1;
+      box-shadow: 0px 0.5px 3px 0.5px #00000042;
+      padding: 10px;
+      cursor: pointer;
+      flex-flow: column;
 
-#Accordion section:target p {
-  align-content: center;
-  display:block;
-  text-align: lefts;
-  transition: all .4s linear;
-  border-block-color: #333;
+      .title {
+        background-color: #ffffff;
+        text-align: left;
+        padding-left: 10px;
+        font-size: 1.5em;
+        margin: 0;
+        font-weight: bold;
+      }
+
+      .desc {
+        padding: 10px;
+        overflow: hidden;
+        transform: scale(0);
+        visibility: hidden;
+
+        .salario {
+          width: 100%;
+          height: auto;
+          margin: 10px 0 0 0;
+          color: #008000;
+          font-weight: bold;
+          text-align: right;
+        }
+      }
+    }
+  }
 }
