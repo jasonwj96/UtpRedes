@@ -7,42 +7,41 @@ const Eventos = () => {
     {
       imageUrl: "./evento1.jpeg",
 
-      fecha: "Lunes, Septiembre 30 hasta Octubre 3 del 2019",
-      lugar: "Hotel Wyndham Albrook Mall - Ciudad de Panamá",
+      fecha: "Lunes, 30 de septiembre hasta Octubre 3 del 2019",
+      lugar: "Hotel Wyndham Albrook Mall, Ciudad de Panamá",
       organizadores:
-        "Universidad Tecnológica de Panamá. Universidad de Panamá. Universidad Autónoma de Chiriquí",
+        "Universidad Tecnológica de Panamá,Universidad de Panamá y Universidad Autónoma de Chiriquí",
       contacto: "www.clei2019.utp.ac.pa",
-      desc: "La conferencia latinoamericana de informatica CLEI 2019"
+      desc: "Conferencia Latinoamericana De Informática CLEI 2019"
     },
     {
-      imageUrl: "./evento1.jpeg",
-
-      fecha: "Lunes, Septiembre 30 hasta Octubre 3 del 2019",
-      lugar: "Hotel Wyndham Albrook Mall - Ciudad de Panamá",
-      organizadores:
-        "Universidad Tecnológica de Panamá. Universidad de Panamá. Universidad Autónoma de Chiriquí",
-      contacto: "www.clei2019.utp.ac.pa",
-      desc: "La conferencia latinoamericana de informatica CLEI 2019"
+      imageUrl: "./evento2.jpeg",
+      fecha: "Miércoles 11 de septiembre del 2019",
+      lugar: "Hotel Movich Pereira. Risaralda, Colombia",
+      organizadores: "COMFAMILIAR GITCE SNI",
+      contacto:
+        "www.redmitic.utp.ac.pa/amitic2019, vladimir.villarreal@utp.ac.pa",
+      desc:
+        "II Congreso Internacional en Inteligencia Ambiental, Ingeniería de Software, Salud Electrónica y Móvil."
     },
     {
-      imageUrl: "./evento1.jpeg",
+      imageUrl: "./evento3.jpeg",
 
-      fecha: "Lunes, Septiembre 30 hasta Octubre 3 del 2019",
-      lugar: "Hotel Wyndham Albrook Mall - Ciudad de Panamá",
-      organizadores:
-        "Universidad Tecnológica de Panamá. Universidad de Panamá. Universidad Autónoma de Chiriquí",
-      contacto: "www.clei2019.utp.ac.pa",
-      desc: "La conferencia latinoamericana de informatica CLEI 2019"
+      fecha: "Martes 13 de agosto de 2019",
+      lugar: "Teatro Auditorio de la Universidad Tecnológica de Panamá",
+      organizadores: "Dirección General de Recursos Humanos",
+      contacto: "560-3036/560-3035",
+      desc: "Acto de Entrega de Pines por Reconocimiento de Años de Servicio"
     },
     {
-      imageUrl: "./evento1.jpeg",
+      imageUrl: "./evento4.jpeg",
 
-      fecha: "Lunes, Septiembre 30 hasta Octubre 3 del 2019",
-      lugar: "Hotel Wyndham Albrook Mall - Ciudad de Panamá",
-      organizadores:
-        "Universidad Tecnológica de Panamá. Universidad de Panamá. Universidad Autónoma de Chiriquí",
+      fecha: "Sábado 10 de agosto de 2019",
+      lugar:
+        "Universidad Tecnológica de Panamá, Sótano del Edificio No. 3, FAB LAB UTP.",
+      organizadores: "Universidad Tecnológica de Panamá",
       contacto: "www.clei2019.utp.ac.pa",
-      desc: "La conferencia latinoamericana de informatica CLEI 2019"
+      desc: "Curso de Robótica Móvil con el Rasberry Pi y Python"
     }
   ];
 
