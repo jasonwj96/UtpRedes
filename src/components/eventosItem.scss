@@ -1,0 +1,135 @@
+@import "../themes/light_theme";
+
+@keyframes imageAnim {
+  to {
+    transform: translateY(-100px);
+  }
+}
+
+.eventosItem-container {
+  width: auto;
+  height: 0px;
+  display: flex;
+  background-color: darken($accent, 15%);
+  overflow: hidden;
+  transition-property: height, flex-flow;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  flex-grow: 1;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  flex-flow: column;
+
+  .overlay {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000b2;
+    z-index: 2;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    transition: background-color 200ms ease-in-out;
+    flex-flow: column;
+
+    .overlay-desc {
+      font-size: 1em;
+      font-weight: bold;
+    }
+
+    .overlay-date {
+      font-size: 1em;
+      font-weight: bold;
+    }
+
+    &:hover {
+      background-color: lighten(#000000b2, 20%);
+    }
+  }
+
+  img {
+    object-fit: cover;
+    width: auto;
+    height: 700px;
+    pointer-events: none;
+    transition-property: width;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    animation-name: imageAnim;
+    animation-duration: 8000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .info {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    background-color: darken($accent, 15%);
+
+    .close-btn {
+      @include card();
+      pointer-events: all;
+      cursor: pointer;
+      outline: none;
+      background: $terciary;
+      border-radius: 50%;
+      min-width: 40px;
+      min-height: 40px;
+      margin: 10px;
+      z-index: 100;
+      align-self: flex-end;
+      color: #fff;
+      border: none;
+
+      i {
+        font-size: 1.2em;
+        pointer-events: none;
+      }
+    }
+
+    p {
+      display: flex;
+      flex-flow: column;
+      font-family: "Roboto";
+      color: #fff;
+      height: 100%;
+      width: 100%;
+      padding: 50px 30px 0px 30px;
+      margin: 0;
+      font-size: 100%;
+      pointer-events: none;
+    }
+  }
+}
+
+.expand {
+  height: 100%;
+  cursor: default;
+  pointer-events: none;
+  flex-flow: row;
+
+  .overlay {
+    background-color: transparent;
+    pointer-events: none;
+
+    i,
+    p {
+      visibility: hidden;
+    }
+  }
+
+  img {
+    filter: none;
+    animation-name: none;
+    height: 100%;
+  }
+}

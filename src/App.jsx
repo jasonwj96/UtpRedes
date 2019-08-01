@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import "./App.scss";
 import Breadcrumbs from "./components/breadcrumbs";
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
@@ -10,8 +10,6 @@ import Materias4 from "./containers/materiasaño4";
 import Navbar from "./components/navbar";
 import Acerca from "./containers/acerca";
 import Eventos from "./containers/eventos";
-
-// import Postcard from "./components/postcard";
 
 const App = () => {
   return (
