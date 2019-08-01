@@ -12,13 +12,14 @@ const Acerca = props => {
     },
     {
       imageUrl: "./slide2.jpg",
-      desc: "La Universidad Tecnológica de Panamá, mediante el beneficio de la Bolsa de Trabajo, provee al egresado ofertas de trabajo y pasantías",
+      desc:
+        "La Universidad Tecnológica de Panamá, mediante el beneficio de la Bolsa de Trabajo, provee al egresado ofertas de trabajo y pasantías",
       overlayText: "Oportunidad laboral"
     },
     {
       imageUrl: "./slide3.jpg",
       desc:
-        "  La Universidad Tecnológica de Panamá es la única universidad panameña en el QS World University Rankings, manteniéndose en el rango de 801 a 1,000 universidades. En los dos últimos años la UTP ha recibido a 320 estudiantes de Europa, América Latina y Asia y ha enviado a más de 280 estudiantes a través de los Programas de Internacionalización estudiantil que desarrolla esta institución.",
+        "La Universidad Tecnológica de Panamá es la única universidad panameña en el QS World University Rankings, manteniéndose en el rango de 801 a 1,000 universidades. En los dos últimos años la UTP ha recibido a 320 estudiantes de Europa, América Latina y Asia y ha enviado a más de 280 estudiantes a través de los Programas de Internacionalización estudiantil que desarrolla esta institución.",
       overlayText: "Reconocimiento internacional"
     },
     {
@@ -30,7 +31,7 @@ const Acerca = props => {
     {
       imageUrl: "./slide5.jpg",
       desc:
-        " La Universidad Tecnológica de Panamá coloca a disposición de sus graduados, la Unidad de Egresados, que trabaja en programas de servicios para promover el acercamiento de los exalumnos a su Alma Máter, motivando su pertenencia y permanencia. Entre los beneficios que se ofrecen a los graduados están la bolsa de trabajo, envío de información institucional sobre diferentes actividades programadas en las dependencias académicas, programas de educación continua, artículos nacionales e internacionales referentes a su carrera, entre otros.",
+        "La Universidad Tecnológica de Panamá coloca a disposición de sus graduados, la Unidad de Egresados, que trabaja en programas de servicios para promover el acercamiento de los exalumnos a su Alma Máter, motivando su pertenencia y permanencia. Entre los beneficios que se ofrecen a los graduados están la bolsa de trabajo, envío de información institucional sobre diferentes actividades programadas en las dependencias académicas, programas de educación continua, artículos nacionales e internacionales referentes a su carrera, entre otros.",
       overlayText: "Egresados"
     }
   ];
