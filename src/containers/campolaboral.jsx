@@ -1,63 +1,59 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./campolaboral.scss";
+import EmpleoItem from "../components/empleoItem";
 const CampoLaboral = props => {
-  const [toggleItem, setToggleItem] = useState(false);
-  const [className, setClassName] = useState("accordionItem");
-
-  useEffect(() => {
-    toggleItem
-      ? setClassName("accordionItem expand")
-      : setClassName("accordionItem");
-  }, [toggleItem]);
+  const empleos = [
+    {
+      title: "Administrador de redes informáticas",
+      desc:
+        "Los administradores de redes informáticas desarrollan, soportan y mantienen a las redes informáticas de las empresas. Una red es un grupo de ordenadores conectados entre sí, por lo general, a través de un ordenador potente llamado servidor central.",
+      salario: "1500.00"
+    },
+    {
+      title: "Ingeniero de telecomunicaciones",
+      desc:
+        "Los ingenieros de telecomunicaciones son expertos en tecnología de las comunicaciones. Se encargan del diseño, investigación y desarrollo de sistemas de comunicaciones por cable y satélite, teléfonos móviles, ondas de radio, Internet y correo electrónico.",
+      salario: "1500.00"
+    },
+    {
+      title: "Técnico informático de servicios de soporte",
+      desc:
+        " Los técnicos informáticos de servicios de soporte trabajan en colaboración con ingenieros informáticos y ayudan a los clientes o compañeros de trabajo a hacer funciona equipamientos informáticos.",
+      salario: "1200.00"
+    },
+    {
+      title: "",
+      desc: "",
+      salario: ""
+    },
+    {
+      title: "",
+      desc: "",
+      salario: ""
+    },
+    {
+      title: "",
+      desc: "",
+      salario: ""
+    }
+  ];
 
   return (
     <div className="campolaboral-container">
       <div className="accordion">
-        <div className={className}>
-          <div className="header" onClick={() => setToggleItem(!toggleItem)}>
-            <p className="title">Administrador de redes informáticas</p>
-            <div className="toggle">
-              <i className="fas fa-chevron-down" />
-            </div>
-          </div>
-          <div className="desc">
-            <p>
-              Los administradores de redes informáticas desarrollan, soportan y
-              mantienen a las redes informáticas de las empresas. Una red es un
-              grupo de ordenadores conectados entre sí, por lo general, a través
-              de un ordenador potente llamado servidor central.
-            </p>
-          </div>
-          <div className="salario">Salario aproximado: $1500.00</div>
-        </div>
-        {/* <div className="accordionItem">
-          <div className="header">
-            <p className="title">Ingeniero de telecomunicaciones</p>
-            <div className="toggle">
-              <i className="fas fa-chevron-down" />
-            </div>
-          </div>
-          <div className="desc">
-            <p>
-              Los ingenieros de telecomunicaciones son expertos en tecnología de
-              las comunicaciones. Se encargan del diseño, investigación y
-              desarrollo de sistemas de comunicaciones por cable y satélite,
-              teléfonos móviles, ondas de radio, Internet y correo electrónico.
-            </p>
-          </div>
-          <div className="salario">Salario aproximado: $1500.00</div>
-        </div> */}
-        {/*
-      <div id="Item 3">
-        <h1>Técnico informático de servicios de soporte</h1>
+        {empleos.map((item, index) => {
+          return (
+            <EmpleoItem
+              key={index}
+              title={item.title}
+              desc={item.desc}
+              salario={item.salario}
+            />
+          );
+        })}
 
-        <p>
-          Los técnicos informáticos de servicios de soporte trabajan en
-          colaboración con ingenieros informáticos y ayudan a los clientes o
-          compañeros de trabajo a hacer funciona equipamientos informáticos.
-          <p>Salario aproximado: $ 1200.00</p>
-        </p>
-      </div>
+        {/*
+
       <div id="Item 4">
         <h1>Especialista en ciberseguridad</h1>
 
