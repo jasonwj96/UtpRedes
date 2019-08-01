@@ -29,11 +29,22 @@ const EventosItem = props => {
         <button className="close-btn" onClick={toggle}>
           <i className="fas fa-times" />
         </button>
-        <p>{desc}</p>
-        <p>{fecha}</p>
-        <p>{lugar}</p>
-        <p>{organizadores}</p>
-        <p>{contacto}</p>
+        <p className="info-title">{desc}</p>
+        <p>
+          <span>Fecha:</span> {fecha}
+        </p>
+        <p>
+          <span>Lugar:</span>
+          {lugar}
+        </p>
+        <p>
+          <span>Organizadores:</span>
+          {organizadores}
+        </p>
+        <p>
+          <span>Contacto:</span>
+          {contacto}
+        </p>
       </div>
     </div>
   );

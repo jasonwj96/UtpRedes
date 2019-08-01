@@ -41,6 +41,7 @@ const Acerca = props => {
         {info.map((item, index) => {
           return (
             <AboutItem
+              key={index}
               id={index}
               imageUrl={item.imageUrl}
               desc={item.desc}
