@@ -2,20 +2,20 @@ import React, { useEffect, useState } from "react";
 import "./empleoItem.scss";
 
 const EmpleoItem = props => {
+  const [className, setClassName] = useState("empleoItem-container");
+  const [toggleItem, setToggleItem] = useState(false);
   const { salario, title, desc } = props;
 
-  const [toggleItem, setToggleItem] = useState(false);
-  const [className, setClassName] = useState("accordionItem");
-
   useEffect(() => {
-    toggleItem
-      ? setClassName("accordionItem expand")
-      : setClassName("accordionItem");
+    if (toggleItem) setClassName("empleoItem-container expand");
+    else setClassName("empleoItem-container");
   }, [toggleItem]);
 
+  const toggle = () => setToggleItem(!toggleItem);
+
   return (
-    <div className={className}>
-      <div className="header" onClick={() => setToggleItem(!toggleItem)}>
+    <div className={className} onClick={toggle}>
+      <div className="header">
         <p className="title">{title}</p>
         <div className="toggle">
           <i className="fas fa-chevron-down" />
