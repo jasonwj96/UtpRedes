@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./campolaboral.scss";
-import { Link } from "react-router-dom";
 const CampoLaboral = props => {
+  const [toggleItem, setToggleItem] = useState(true);
+  const [className, setClassName] = useState("accordionItem");
+
+  useEffect(() => {
+    toggleItem
+      ? setClassName("accordionItem expand")
+      : setClassName("accordionItem");
+  }, [toggleItem]);
+
+  const toggle = () => {
+    setToggleItem(!toggleItem);
+  };
+
   return (
     <div className="campolaboral-container">
       <div className="accordion">
-        <div className="accordionItem">
+        <div className={className} onClick={toggle}>
           <div className="header">
             <p className="title">Administrador de redes informáticas</p>
             <div className="toggle">
@@ -22,33 +34,24 @@ const CampoLaboral = props => {
           </div>
           <div className="salario">Salario aproximado: $1500.00</div>
         </div>
-        <div className="accordionItem">
+        {/* <div className="accordionItem">
           <div className="header">
-            <p className="title">Administrador de redes informáticas</p>
+            <p className="title">Ingeniero de telecomunicaciones</p>
             <div className="toggle">
               <i className="fas fa-chevron-down" />
             </div>
           </div>
           <div className="desc">
             <p>
-              Los administradores de redes informáticas desarrollan, soportan y
-              mantienen a las redes informáticas de las empresas. Una red es un
-              grupo de ordenadores conectados entre sí, por lo general, a través
-              de un ordenador potente llamado servidor central.
+              Los ingenieros de telecomunicaciones son expertos en tecnología de
+              las comunicaciones. Se encargan del diseño, investigación y
+              desarrollo de sistemas de comunicaciones por cable y satélite,
+              teléfonos móviles, ondas de radio, Internet y correo electrónico.
             </p>
           </div>
           <div className="salario">Salario aproximado: $1500.00</div>
-        </div>
-        {/* <div id="Item 2">
-        <h1>Ingeniero de telecomunicaciones</h1>
-        <p>
-          Los ingenieros de telecomunicaciones son expertos en tecnología de las
-          comunicaciones. Se encargan del diseño, investigación y desarrollo de
-          sistemas de comunicaciones por cable y satélite, teléfonos móviles,
-          ondas de radio, Internet y correo electrónico.
-          <p>Salario aproximado: $1500.00 </p>
-        </p>
-      </div>
+        </div> */}
+        {/*
       <div id="Item 3">
         <h1>Técnico informático de servicios de soporte</h1>
 
