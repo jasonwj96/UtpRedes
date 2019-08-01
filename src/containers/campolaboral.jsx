@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./campolaboral.scss";
 const CampoLaboral = props => {
-  const [toggleItem, setToggleItem] = useState(true);
+  const [toggleItem, setToggleItem] = useState(false);
   const [className, setClassName] = useState("accordionItem");
 
   useEffect(() => {
@@ -10,15 +10,11 @@ const CampoLaboral = props => {
       : setClassName("accordionItem");
   }, [toggleItem]);
 
-  const toggle = () => {
-    setToggleItem(!toggleItem);
-  };
-
   return (
     <div className="campolaboral-container">
       <div className="accordion">
-        <div className={className} onClick={toggle}>
-          <div className="header">
+        <div className={className}>
+          <div className="header" onClick={() => setToggleItem(!toggleItem)}>
             <p className="title">Administrador de redes informáticas</p>
             <div className="toggle">
               <i className="fas fa-chevron-down" />
