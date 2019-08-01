@@ -7,11 +7,11 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding: 20px;
+  padding: 20px 80px;
 
   &::before {
     content: "";
-    background: url("./img/utp_background.jpg") no-repeat center fixed;
+    background: url("./img/assets/utp_background.jpg") no-repeat center fixed;
     background-size: cover;
     filter: brightness(0.3);
     width: 100%;

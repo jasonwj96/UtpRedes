@@ -12,6 +12,7 @@
   z-index: 1;
   padding: 10px 5px;
   border-bottom: 1px solid #0000003b;
+  overflow: hidden;
 
   .menu-link {
     margin: 0 5px;
@@ -21,25 +22,52 @@
     color: $link-color;
     display: flex;
     text-decoration: none;
-    height: auto;
+    height: 30px;
     width: $link-width;
     align-items: center;
     flex-flow: column;
     justify-content: flex-end;
-    transition: 0.2s all ease-in;
     font-weight: bold;
     box-sizing: border-box;
     padding: 5px;
     border-radius: 50px;
+    border: rgba(#000, 0.3) 1px solid;
+    overflow: hidden;
+    transition: all 0.1s;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $link-hover-bg;
+      width: 10px;
+      height: 10px;
+      margin: auto;
+      box-sizing: border-box;
+      transition: transform 1s 0s;
+      transform: scale(0);
+      border-radius: 500px;
+
+      p {
+        margin: 0;
+        padding: 0;
+      }
+    }
 
     p {
       margin: auto 5px;
       font-size: 100%;
+      z-index: 2;
+      transition: color 0.01s ease-out;
     }
 
     &:hover {
-      background-color: $link-hover-bg;
       color: $link-hover-color;
+      border: $link-hover-border-color 1px solid;
+
+      &::before {
+        transform: scale(100);
+      }
     }
   }
 }

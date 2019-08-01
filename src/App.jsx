@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import "./App.scss";
 import Breadcrumbs from "./components/breadcrumbs";
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
@@ -9,8 +9,8 @@ import Materias3 from "./containers/materiasaño3";
 import Materias4 from "./containers/materiasaño4";
 import CampoLaboral from "./containers/campolaboral";
 import Navbar from "./components/navbar";
-
-// import Postcard from "./components/postcard";
+import Acerca from "./containers/acerca";
+import Eventos from "./containers/eventos";
 
 const App = () => {
   return (
@@ -20,14 +20,13 @@ const App = () => {
         <div className="screen-container">
           <Breadcrumbs />
           <Navbar />
-          <Suspense fallback={<p>Loading....</p>}>
-            <Route exact path="/inicio" component={Home} />
-            <Route path="/inicio/Primer año" component={Materias} />
-            <Route path="/inicio/Segundo año" component={Materias2} />
-            <Route path="/inicio/Tercer año" component={Materias3} />
-            <Route path="/inicio/Cuarto año" component={Materias4} />
-            <Route path="/inicio/Campo Laboral" component={CampoLaboral} />
-          </Suspense>
+          <Route exact path="/inicio" component={Home} />
+          <Route path="/inicio/Acerca de la carrera" component={Acerca} />
+          <Route path="/inicio/Primer año" component={Materias} />
+          <Route path="/inicio/Segundo año" component={Materias2} />
+          <Route path="/inicio/Tercer año" component={Materias3} />
+          <Route path="/inicio/Cuarto año" component={Materias4} />
+          <Route path="/inicio/Eventos" component={Eventos} />
         </div>
       </Router>
     </div>

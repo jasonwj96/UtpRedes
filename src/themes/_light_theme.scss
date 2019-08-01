@@ -1,6 +1,7 @@
 // Global
 $accent: #006391;
 $secondary: lighten($accent, 20%);
+$terciary: #ffa600;
 $screen-container-width: 100%;
 $screen-container-height: 100%;
 
@@ -12,11 +13,18 @@ $separator-color: $accent;
 $navbar-height: auto;
 $navbar-bg: #fff;
 $link-width: 150px;
-$link-hover-bg: #006391fd;
+// $link-hover-bg: rgba($accent, 0.2);
+$link-hover-bg: $accent;
+$link-hover-color: $accent;
 $link-hover-color: #fff;
+$link-hover-border-color: rgba($accent, 0.2);
+// $link-hover-border-color: $accent;
 $link-color: #333;
 
+//Materias
+$table-semester-color: $terciary;
+
 @mixin card {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.219);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   background-color: #fff;
 }
