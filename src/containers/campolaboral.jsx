@@ -50,9 +50,9 @@ const CampoLaboral = () => {
         <p>
           <img src="" alt="" />
           Los estudiantes egresados de la carrera de Licenciatura en redes,
-          tienen una de las mejores oportunidades laborales con las mejores
-          prestaciones. Selecciona alguna de las siguientes plazas de trabajo
-          para saber más:
+          tienen una de las mejores oportunidades de empleo con las mejores
+          prestaciones laborales. Selecciona en alguna de las siguientes plazas
+          de trabajo para saber más:
         </p>
       </div>
       <div className="accordion">
