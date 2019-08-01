@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./empleoItem.scss";
 
 const EmpleoItem = props => {
   const { salario, title, desc } = props;

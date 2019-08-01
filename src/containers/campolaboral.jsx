@@ -22,19 +22,22 @@ const CampoLaboral = props => {
       salario: "1200.00"
     },
     {
-      title: "",
-      desc: "",
-      salario: ""
+      title: "Especialista en ciberseguridad",
+      desc:
+        "El especialista en ciberseguridad es el encargado de la privacidad y protección de datos de las empresas y las organizaciones para hacer frente a los ciberataques",
+      salario: "2500.00"
     },
     {
-      title: "",
-      desc: "",
-      salario: ""
+      title: "Ingeniero informático de hardware",
+      desc:
+        "Los ingenieros informáticos de hardware trabajan en el diseño, desarrollo y fabricación de equipamientos informáticos. Se especializan en áreas tales como las comunicaciones, los sistemas de control, la robótica, los microprocesadores o los dispositivos semiconductores. ",
+      salario: "2000.00"
     },
     {
-      title: "",
-      desc: "",
-      salario: ""
+      title: "Montador de ordenadores",
+      desc:
+        "Los montadores de ordenadores construyen ordenadores a partir de sus piezas, tales como tableros de circuitos, unidades de disco, cables e interruptores. Cuando ya han ensamblado el ordenador, ponen a prueba el equipo y detectan posibles errores.",
+      salario: "2500.00"
     }
   ];
 
@@ -51,39 +54,6 @@ const CampoLaboral = props => {
             />
           );
         })}
-
-        {/*
-
-      <div id="Item 4">
-        <h1>Especialista en ciberseguridad</h1>
-
-        <p>
-          El especialista en ciberseguridad es el encargado de la privacidad y
-          protección de datos de las empresas y las organizaciones para hacer
-          frente a los ciberataques.<p>Salario aproximado: $2500.00</p>
-        </p>
-      </div>
-      <div id="Item 5">
-        <h1>Ingeniero informático de hardware</h1>
-        <p>
-          Los ingenieros informáticos de hardware trabajan en el diseño,
-          desarrollo y fabricación de equipamientos informáticos. Se
-          especializan en áreas tales como las comunicaciones, los sistemas de
-          control, la robótica, los microprocesadores o los dispositivos
-          semiconductores. <p>Salario aproximado: $2000.00</p>
-        </p>
-      </div>
-      <div id="Item 6">
-        <h1>Montador de ordenadores</h1>
-
-        <p>
-          Los montadores de ordenadores construyen ordenadores a partir de sus
-          piezas, tales como tableros de circuitos, unidades de disco, cables e
-          interruptores. Cuando ya han ensamblado el ordenador, ponen a prueba
-          el equipo y detectan posibles errores.
-          <p>Salario aproximado: $2500.00</p>
-        </p>
-      </div> */}
       </div>
     </div>
   );

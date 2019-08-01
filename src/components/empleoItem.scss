@@ -1,0 +1,88 @@
+@import "../themes/light_theme";
+
+.accordionItem {
+  display: flex;
+  flex-flow: column;
+  height: 0;
+  flex-grow: 1;
+  box-shadow: 0px 0.5px 3px 0.5px #00000042;
+  transition-property: height;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+
+  .header {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+    .title {
+      background-color: #ffffff;
+      text-align: left;
+      font-size: 1.2em;
+      margin: 0;
+      font-weight: bold;
+      justify-content: center;
+    }
+
+    .toggle {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      background-color: transparent;
+      animation-name: none;
+      animation-timing-function: ease-in-out;
+      animation-duration: 200ms;
+      animation-fill-mode: both;
+
+      i {
+        font-size: 1em;
+      }
+    }
+  }
+
+  .desc {
+    display: flex;
+    flex-flow: column;
+    width: auto;
+    display: none;
+
+    p {
+      margin: 10px 20px;
+      font-family: "Roboto";
+    }
+  }
+
+  .salario {
+    align-self: flex-end;
+    width: fit-content;
+    height: auto;
+    display: none;
+    margin: auto 0 20px 0;
+    color: #ffffff;
+    background-color: #008000;
+    border-radius: 50px 0 0 50px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 0.9em;
+  }
+}
+
+.expand {
+  flex-grow: 6;
+
+  .header {
+    .toggle {
+      animation-name: flipIcon;
+    }
+  }
+
+  .desc {
+    display: flex;
+  }
+
+  .salario {
+    display: flex;
+  }
+}
