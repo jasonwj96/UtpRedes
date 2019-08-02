@@ -7,20 +7,21 @@ const perfilEgresado = props => {
     {
       imageUrl: "./entrevistas.jpg",
       desc:
-        "La carrera de Administración de Redes y Comunicaciones es una profesión muy solicitada en todos los rubros de nuestro mercado, pero ante esa necesidad, el nivel de especialización y capacitación es muy exigente; es por ello, que anualmente realizamos un Comité Técnico Consultivo con representantes de empresas líderes en distintos rubros para que los miembros puedan proporcionarle a nuestros alumnos asesoría técnica y de esa manera conozcan lo que se requiere o se necesita hoy en día en nuestro país",
+        
+        <p align="justify">La carrera de Licenciatura de Redes Informáticas es una profesión muy solicitada en todos los rubros de nuestro mercado, pero ante esa necesidad, el nivel de especialización y capacitación es muy exigente; es por ello, que anualmente realizamos un evento con representantes de empresas líderes en distintos rubros para que los miembros puedan proporcionarle a nuestros alumnos asesoría técnica y de esa manera conozcan lo que se requiere o se necesita hoy en día en nuestro país"</p>,
 
       overlayText: "Entrevistas"
     },
     {
       imageUrl: "./experiencia.jpg",
       desc:
-        "La Universidad Tecnológica de Panamá, mediante el beneficio de la Bolsa de Trabajo, provee al egresado ofertas de trabajo y pasantías",
+      <p align="justify">El acceso a las nuevas tecnologías comienza a definir nuevos escenarios de aprendizaje complementados con las clases teóricas – prácticas. Desde esta definición conceptual nos encontramos con posibilidades de cambio frente al tradicional, los dispositivos grupales nos permiten un acercamiento eficaz, motivador de aperturas de trabajo en equipo, con objetivos de lograr confianza, alcanzando niveles altos de pertenencia y pertinencia como consecuencia de abrir permanentemente canales de comunicación entre los estudiantes.</p>,
       overlayText: "Experiencias"
     },
     {
       imageUrl: "./recomendacion.jpg",
       desc:
-        "La Universidad Tecnológica de Panamá es la única universidad panameña en el QS World University Rankings, manteniéndose en el rango de 801 a 1,000 universidades. En los dos últimos años la UTP ha recibido a 320 estudiantes de Europa, América Latina y Asia y ha enviado a más de 280 estudiantes a través de los Programas de Internacionalización estudiantil que desarrolla esta institución.",
+      <p align="justify">En un mercado donde cada vez hay más competencia y exigencias, las empresas comienzan a valorar de mayor forma el talento, la formación y especialización en áreas concretas, es por ello que la Universidad Tecnológica de Panamá realiza anualmente distintos eventos para todas sus carreras con representantes para exponer hacia los estudiantes las cosas que deben afianzar para entrar al mercado laboral</p>,
       overlayText: "Recomendaciones"
     }
   ];

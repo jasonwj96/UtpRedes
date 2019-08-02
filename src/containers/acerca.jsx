@@ -7,31 +7,39 @@ const Acerca = props => {
     {
       imageUrl: "./slide1.jpg",
       desc:
-        "La Universidad Tecnológica de Panamá brinda a todos sus estudiantes las mejores instalaciones para su vida universitaria. Como por ejemplo, acceso inalámbrico a internet mediante Wi-Fi, biblioteca con amplias áreas de trabajo, áreas recreativas, gimnasio, estacionamientos para estudiantes, entre otros.",
+      <p align="justity">La Universidad Tecnológica de Panamá brinda a todos sus estudiantes las mejores instalaciones para su vida universitaria. Como por ejemplo, acceso inalámbrico a internet mediante Wi-Fi, biblioteca con amplias áreas de trabajo, áreas recreativas, gimnasio, estacionamientos para estudiantes, entre otros.</p>,
       overlayText: "Instalaciones"
     },
     {
       imageUrl: "./slide2.jpg",
       desc:
-        "La Universidad Tecnológica de Panamá, mediante el beneficio de la Bolsa de Trabajo, provee al egresado ofertas de trabajo y pasantías",
+      <p align="justify">Administrar sistemas en la red de acuerdo a los criterios establecidos para garantizar la calidad de operaciones.
+      Evaluar y seleccionar el hardware y software para determinar las necesidades operacionales de una red de comunicaciones de una organización.</p>,
       overlayText: "Oportunidad laboral"
     },
     {
       imageUrl: "./slide3.jpg",
       desc:
-        "La Universidad Tecnológica de Panamá es la única universidad panameña en el QS World University Rankings, manteniéndose en el rango de 801 a 1,000 universidades. En los dos últimos años la UTP ha recibido a 320 estudiantes de Europa, América Latina y Asia y ha enviado a más de 280 estudiantes a través de los Programas de Internacionalización estudiantil que desarrolla esta institución.",
+      <p align="justify">La Universidad Tecnológica de Panamá es la única universidad panameña en el QS World University Rankings, manteniéndose en el rango de 801 a 1,000 universidades. En los dos últimos años la UTP ha recibido a 320 estudiantes de Europa, América Latina y Asia y ha enviado a más de 280 estudiantes a través de los Programas de Internacionalización estudiantil que desarrolla esta institución.</p>,
       overlayText: "Reconocimiento internacional"
     },
     {
       imageUrl: "./slide4.jpg",
       desc:
-        "La Universidad Tecnológica de Panamá cuenta con los educadores más experimentados en diversas áreas de la enseñanza, dispuestos a atender todas las necesidades que tengan sus estudiantes.",
+      <p align="justify">La Universidad Tecnológica de Panamá cuenta con los educadores más experimentados en diversas áreas de la enseñanza, dispuestos a atender todas las necesidades que tengan sus estudiantes.</p>,
       overlayText: "Cuerpo docente"
     },
     {
       imageUrl: "./slide5.jpg",
       desc:
-        "La Universidad Tecnológica de Panamá coloca a disposición de sus graduados, la Unidad de Egresados, que trabaja en programas de servicios para promover el acercamiento de los exalumnos a su Alma Máter, motivando su pertenencia y permanencia. Entre los beneficios que se ofrecen a los graduados están la bolsa de trabajo, envío de información institucional sobre diferentes actividades programadas en las dependencias académicas, programas de educación continua, artículos nacionales e internacionales referentes a su carrera, entre otros.",
+      <p align="justify">El graduado de la carrera de Licenciatura en Redes Informáticas estará preparado para:<br/><br/>
+      <ul>
+      <li>Instalar, configurar y administrar sistemas operativos en servidores, estaciones de trabajo y otros periféricos.</li><br/>
+      <li>Desarrollar e implantar políticas de seguridad en las redes de computadoras.</li><br/>
+      <li>Analizar y diseñar redes para aplicaciones tales como videoconferencia, televisión IP, voz sobre IP, entre otras.</li><br/>
+      <li>Aplicar tecnologías móviles e inalámbricas que permitan a los usuarios interconectarse.</li><br/>
+      <li>Evaluar y seleccionar el hardware y software para determinar las necesidades operacionales de una red de comunicaciones de una organización.</li><br/>
+      <li>Administrar sistemas en la red de acuerdo a los criterios establecidos para garantizar la calidad de operación.</li></ul></p>,
       overlayText: "Egresados"
     }
   ];

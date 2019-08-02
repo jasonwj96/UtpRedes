@@ -19,7 +19,7 @@ const EgresadoItem = props => {
       <div className="overlay">
         <p className="overlay-text">{overlayText}</p>
       </div>
-      <img src={images(`${imageUrl}`)} alt="" />
+      <img src={images(`${imageUrl}`)} alt="Alejandro Murillo" />
       <div className="info">
         <button className="close-btn" onClick={toggle}>
           <i className="fas fa-times" />

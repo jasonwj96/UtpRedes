@@ -11,7 +11,7 @@ const Materias3 = props => {
           <div className="tables">
             <table width="498">
               <tbody>
-                <tr>
+                <tr className="semesters">
                   <td colspan="9" width="354">
                     <strong>Primer Semestre</strong>
                   </td>
@@ -91,7 +91,7 @@ const Materias3 = props => {
 
             <table width="498">
               <tbody>
-                <tr>
+                <tr className="semesters">
                   <td colspan="9" width="354">
                     <strong>Segundo Semestre</strong>
                   </td>
