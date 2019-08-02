@@ -27,7 +27,7 @@ const Menu = props => {
       <div id="main">
         <img id="menu-logo" src={logo} alt="logo" />
         <div id="linkset">
-          <Link className="menu-link selected" to="/inicio">
+          <Link className="menu-link selected" to="/presentacion">
             <i className="fas fa-home" />
             <p>Inicio</p>
           </Link>

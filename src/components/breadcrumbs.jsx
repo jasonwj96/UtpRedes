@@ -4,7 +4,7 @@ import { Link, withRouter } from "react-router-dom";
 
 const Breadcrumbs = props => {
   const [currentPath, setCurrentPath] = useState(props.location.pathname);
-  const [items, setItems] = useState(["Home"]);
+  const [items, setItems] = useState(["presentacion"]);
 
   useEffect(() => {
     const splitPath = () => {
@@ -51,9 +51,9 @@ const Breadcrumbs = props => {
         {items.map((item, i) => {
           if (item === "/")
             return <i key={i} className="fas fa-chevron-right separator" />;
-          if (item === "inicio")
+          if (item === "presentacion")
             return (
-              <Link key={i} to="/inicio" className="bc-item link home">
+              <Link key={i} to="/presentacion" className="bc-item link home">
                 <i className="fas fa-home" />
               </Link>
             );

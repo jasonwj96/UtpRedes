@@ -17,19 +17,22 @@ const App = () => {
   return (
     <div className="App">
       <Router>
-        <Redirect from="/" to="/inicio" />
+        <Redirect from="/" to="/presentacion" />
         <div className="screen-container">
           <Breadcrumbs />
           <Navbar />
-          <Route exact path="/inicio" component={Home} />
-          <Route path="/inicio/Acerca de la carrera" component={Acerca} />
-          <Route path="/inicio/Primer año" component={Materias} />
-          <Route path="/inicio/Segundo año" component={Materias2} />
-          <Route path="/inicio/Tercer año" component={Materias3} />
-          <Route path="/inicio/Cuarto año" component={Materias4} />
-          <Route path="/inicio/Eventos" component={Eventos} />
-          <Route path="/inicio/Perfil de egresado" component={PerfilEgresado} />
-          <Route path="/inicio/Campo laboral" component={CampoLaboral} />
+          <Route exact path="/presentacion" component={Home} />
+          <Route path="/presentacion/Acerca de la carrera" component={Acerca} />
+          <Route path="/presentacion/Primer año" component={Materias} />
+          <Route path="/presentacion/Segundo año" component={Materias2} />
+          <Route path="/presentacion/Tercer año" component={Materias3} />
+          <Route path="/presentacion/Cuarto año" component={Materias4} />
+          <Route path="/presentacion/Eventos" component={Eventos} />
+          <Route
+            path="/presentacion/Perfil de egresado"
+            component={PerfilEgresado}
+          />
+          <Route path="/presentacion/Campo laboral" component={CampoLaboral} />
         </div>
       </Router>
     </div>
