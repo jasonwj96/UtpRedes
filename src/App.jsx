@@ -12,6 +12,7 @@ import Navbar from "./components/navbar";
 import Acerca from "./containers/acerca";
 import Eventos from "./containers/eventos";
 import PerfilEgresado from "./containers/perfilEgresado";
+import creditos from "./containers/creditos";
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
             component={PerfilEgresado}
           />
           <Route path="/presentacion/Campo laboral" component={CampoLaboral} />
+          <Route path="/presentacion/creditos" component={creditos}/>
         </div>
       </Router>
     </div>
