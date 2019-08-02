@@ -21,19 +21,19 @@ const Ayuda = () => {
     {
       title: "¿Cuáles Son Las Materias Que Contiene La Carrera?",
       desc:
-        " Los técnicos informáticos de servicios de soporte trabajan en colaboración con ingenieros informáticos y ayudan a los clientes o compañeros de trabajo a hacer funciona equipamientos informáticos.",
+        "la página de materia contiene un listado de las materias que se dan la carrera clasificado por año y semestre que le corresponde puede desplazarse por cada año mediante las flechas que se muestran en la parte de debajo de la pantalla",
      
     },
     {
       title: "¿Qué Muestra La Página De Evento?",
       desc:
-        "El especialista en ciberseguridad es el encargado de la privacidad y protección de datos de las empresas y las organizaciones para hacer frente a los ciberataques",
+        "Esta página muestra los principales eventos que se vienen aproximando",
      
     },
     {
       title: "¿Qué Contiene La Página De Perfil De Egresado?",
       desc:
-        "Los ingenieros informáticos de hardware trabajan en el diseño, desarrollo y fabricación de equipamientos informáticos. Se especializan en áreas tales como las comunicaciones, los sistemas de control, la robótica, los microprocesadores o los dispositivos semiconductores. ",
+        "",
       
     },
     {
