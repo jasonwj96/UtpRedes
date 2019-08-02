@@ -28,7 +28,7 @@ const perfilEgresado = props => {
 
   return (
     <div className="perfilEgresado-container">
-      <div className="grid">
+      <div className="grit">
         {info.map((item, index) => {
           return (
             <EgresadoItem
