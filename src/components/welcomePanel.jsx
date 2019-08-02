@@ -29,7 +29,7 @@ const WelcomePanel = () => {
             <p>Cafetería, librería, centros recreativos, y más.</p>
           </li>
         </ul>
-        <Link to="/inicio/Acerca de la carrera">
+        <Link to="/presentacion/Acerca de la carrera">
           <button className="home-btn">Saber más</button>
         </Link>
 

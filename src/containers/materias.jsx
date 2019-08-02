@@ -7,7 +7,7 @@ const Materias = props => {
     <div className="materias-container">
       <div className="mat-container">
         <div className="mat-info">
-          <p className="mat-title">Licenciatura en redes</p>
+          <p className="mat-title">Licenciatura en Redes Informáticas</p>
           <div className="tables">
             <table>
               <tbody>
@@ -145,7 +145,7 @@ const Materias = props => {
           </div>
 
           <div className="mat-footer">
-            <Link className="menu-link" to="/inicio/Segundo año">
+            <Link className="menu-link" to="/presentacion/Segundo año">
               <i className="fas fa-arrow-right" />
               <p>Segundo año</p>
             </Link>

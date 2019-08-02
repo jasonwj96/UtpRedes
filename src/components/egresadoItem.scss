@@ -1,0 +1,137 @@
+@import "../themes/light_theme";
+
+@keyframes imageAnim {
+  to {
+    transform: translateX(-100px);
+  }
+}
+
+.egresadoItem-container {
+  width: 0px;
+  height: auto;
+  display: flex;
+  background-color: darken($accent, 15%);
+  overflow: hidden;
+  transition-property: width;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  flex-grow: 1;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+
+  .overlay {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000b2;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 200ms ease-in-out;
+    flex-flow: column;
+
+    i {
+      font-size: 2em;
+    }
+
+    .overlay-text {
+      font-size: 1em;
+    }
+
+    &:hover {
+      background-color: lighten(#000000b2, 20%);
+    }
+  }
+
+  img {
+    object-fit: cover;
+    width: 700px;
+    height: auto;
+    pointer-events: none;
+    animation-name: imageAnim;
+    animation-duration: 8000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .info {
+    display: flex;
+    flex-flow: column;
+    min-height: 100%;
+    position: relative;
+    width: 100%;
+    top: 0;
+    background-color: darken($accent, 15%);
+
+    .close-btn {
+      @include card();
+      float: right;
+      pointer-events: all;
+      cursor: pointer;
+      outline: none;
+      background: $terciary;
+      border-radius: 50%;
+      min-width: 40px;
+      min-height: 40px;
+      margin: 10px;
+      z-index: 100;
+      align-self: flex-end;
+      color: #fff;
+      border: none;
+
+      i {
+        font-size: 1.2em;
+        pointer-events: none;
+      }
+    }
+
+    img {
+      margin-top: -35px;
+      width: 150px;
+      height: auto;
+      border-radius: 50%;
+      align-self: center;
+    }
+
+    p {
+      display: flex;
+      flex-flow: column;
+      font-family: "Roboto";
+      color: #fff;
+      height: auto;
+      width: 450px;
+      padding: 30px 30px 0px 30px;
+      margin: 0;
+      font: size 0.7em;
+      pointer-events: none;
+    }
+  }
+}
+
+.expand {
+  width: 100%;
+  cursor: default;
+  pointer-events: none;
+
+  .overlay {
+    background-color: transparent;
+    pointer-events: none;
+    display: none;
+
+    i,
+    p {
+      visibility: hidden;
+    }
+  }
+
+  img {
+    filter: none;
+    animation-name: none;
+  }
+}

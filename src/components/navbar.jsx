@@ -6,35 +6,35 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div id="navbar-container">
-      <Link className="menu-link" to="/inicio">
-        <p>Inicio</p>
+      <Link className="menu-link" to="/presentacion">
+        <p>Presentación</p>
       </Link>
 
-      <Link className="menu-link" to="/inicio/Acerca de la carrera">
+      <Link className="menu-link" to="/presentacion/Acerca de la carrera">
         <p>Acerca de la carrera</p>
       </Link>
 
-      <Link className="menu-link" to="/inicio/Primer año">
+      <Link className="menu-link" to="/presentacion/Primer año">
         <p>Materias</p>
       </Link>
 
-      <Link className="menu-link" to="/inicio/Eventos">
+      <Link className="menu-link" to="/presentacion/Eventos">
         <p>Eventos</p>
       </Link>
 
-      <Link className="menu-link" to="/inicio/Perfil de egresado">
+      <Link className="menu-link" to="/presentacion/Perfil de egresado">
         <p>Perfil de egresado</p>
       </Link>
 
-      <Link className="menu-link" to="/inicio/Campo laboral">
+      <Link className="menu-link" to="/presentacion/Campo laboral">
         <p>Campo laboral</p>
       </Link>
 
-      <Link className="menu-link" to="/inicio/Ayuda">
+      <Link className="menu-link" to="/presentacion/Ayuda">
         <p>Ayuda</p>
       </Link>
 
-      <Link className="menu-link" to="/inicio/Creditos">
+      <Link className="menu-link" to="/presentacion/Creditos">
         <p>Créditos</p>
       </Link>
     </div>

@@ -7,11 +7,11 @@ const Materias4 = props => {
     <div className="materias-container">
       <div className="mat-container">
         <div className="mat-info">
-          <p className="mat-title">Licenciatura en redes</p>
+          <p className="mat-title">Licenciatura en Redes Informáticas</p>
           <div className="tables">
             <table width="498">
               <tbody>
-                <tr>
+                <tr className="semesters">
                   <td colspan="9" width="354">
                     <strong>Primer Semestre</strong>
                   </td>
@@ -105,7 +105,7 @@ const Materias4 = props => {
 
             <table width="498">
               <tbody>
-                <tr>
+                <tr className="semesters">
                   <td colspan="9" width="354">
                     <strong>Segundo Semestre</strong>
                   </td>
@@ -185,7 +185,7 @@ const Materias4 = props => {
           </div>
 
           <div className="mat-footer">
-            <Link className="menu-link" to="/inicio/Tercer año">
+            <Link className="menu-link" to="/presentacion/Tercer año">
               <div className="icon">
                 <i class="fas fa-arrow-left" />
                 <p>Tercer año</p>
