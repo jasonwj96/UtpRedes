@@ -185,14 +185,14 @@ const Materias3 = props => {
           </div>
 
           <div className="mat-footer">
-            <Link className="menu-link" to="/inicio/Segundo año">
+            <Link className="menu-link" to="/presentacion/Segundo año">
               <div className="icon">
                 <i class="fas fa-arrow-left" />
                 <p>Segundo año</p>
               </div>
             </Link>
 
-            <Link className="menu-link" to="/inicio/Cuarto año">
+            <Link className="menu-link" to="/presentacion/Cuarto año">
               <div className="icon">
                 <i class="fas fa-arrow-right" />
                 <p>Cuarto Año</p>
