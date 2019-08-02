@@ -185,7 +185,7 @@ const Materias4 = props => {
           </div>
 
           <div className="mat-footer">
-            <Link className="menu-link" to="/inicio/Tercer año">
+            <Link className="menu-link" to="/presentacion/Tercer año">
               <div className="icon">
                 <i class="fas fa-arrow-left" />
                 <p>Tercer año</p>
