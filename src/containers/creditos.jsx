@@ -85,6 +85,7 @@ const creditos = props => {
             </div>
         </div>
 );
+
 };
 
 export default creditos;
