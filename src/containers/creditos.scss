@@ -1,5 +1,57 @@
-creditos-container {
-  img {
+@import "../themes/light_theme";
+
+.creditos-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  .creditosItem {
+    @include card();
+    display: flex;
+    padding: 20px 10px 20px 20px;
+    height: fit-content;
+    width: 400px;
+    height: 200px;
+    background-color: darken($accent, 15%);
     border-radius: 10px;
+    overflow: hidden;
+    font-family: "Roboto";
+    margin: 10px 30px;
+
+    .creditosInfo {
+      width: 100%;
+
+      .autorName {
+        color: $terciary;
+        font-weight: bold;
+        margin: 0px 0px 5px 0px;
+        font-size: 1.2em;
+        text-align: center;
+      }
+
+      p {
+        color: $terciary;
+        font-family: "Roboto";
+      }
+
+      ul {
+        font-family: "Roboto";
+        color: #fff;
+        margin: 10px;
+        font-size: 0.9em;
+        font-family: "Roboto";
+        width: 100%;
+      }
+    }
+
+    img {
+      width: auto;
+      height: 100%;
+      border-radius: 50%;
+    }
   }
 }
