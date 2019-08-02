@@ -12,6 +12,7 @@ import Navbar from "./components/navbar";
 import Acerca from "./containers/acerca";
 import Eventos from "./containers/eventos";
 import PerfilEgresado from "./containers/perfilEgresado";
+import Ayuda from "./containers/ayuda";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/inicio/Eventos" component={Eventos} />
           <Route path="/inicio/Perfil de egresado" component={PerfilEgresado} />
           <Route path="/inicio/Campo laboral" component={CampoLaboral} />
+          <Route path="/inicio/Ayuda" component={Ayuda} />
         </div>
       </Router>
     </div>

@@ -1,0 +1,58 @@
+@import "../themes/light_theme";
+
+@keyframes zoomInOut {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.ayuda-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  font-size: 0.8em;
+  padding: 50px 50px;
+  align-items: center;
+
+  .ayuda-info {
+    @include card();
+    display: flex;
+    flex-flow: column;
+    border-radius: 10px;
+    width: 300px;
+    height: fit-content;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      animation-duration: 5000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+      position: relative;
+    }
+
+    p {
+      position: relative;
+      z-index: 2;
+      padding: 10px;
+    }
+  }
+
+  .accordion {
+    @include card;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    width: auto;
+    height: 100%;
+  }
+}

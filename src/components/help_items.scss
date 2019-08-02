@@ -1,0 +1,134 @@
+@import "../themes/light_theme";
+
+@keyframes flipIcon {
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.ayudaItem-container {
+  background-color: #fff;
+  display: flex;
+  flex-flow: column;
+  width: 500px;
+  height: 0;
+  flex-grow: 1;
+  box-shadow: 0px 0.5px 3px 0.5px #00000042;
+  transition-property: height;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  position: relative;
+  z-index: 1;
+
+  .header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 0;
+    padding: 10px 0px 10px 20px;
+
+    .title {
+      background-color: #ffffff;
+      font-size: 1.2em;
+      margin: 0;
+      font-weight: bold;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .toggle {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      animation-name: none;
+      animation-timing-function: ease-in-out;
+      animation-duration: 500ms;
+      animation-fill-mode: forwards;
+      overflow: hidden;
+      position: relative;
+      border-radius: 50px;
+      margin-right: 10px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: #0c0c0c2c;
+        width: 10px;
+        height: 10px;
+        margin: auto;
+        box-sizing: border-box;
+        transition: transform 1s 0s;
+        transform: scale(0);
+        border-radius: 500px;
+      }
+
+      &:hover {
+        &::before {
+          transform: scale(100);
+        }
+      }
+
+      i {
+        font-size: 1em;
+      }
+    }
+  }
+
+  .desc {
+    display: flex;
+    flex-flow: column;
+    width: auto;
+    height: 100%;
+    transition-property: display;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    display: none;
+
+    p {
+      margin: 10px 20px;
+      font-family: "Roboto";
+    }
+  }
+
+  .salario {
+    display: none;
+    align-self: flex-end;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 0 20px 0;
+    color: #ffffff;
+    background-color: #008000;
+    border-radius: 50px 0 0 50px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 0.9em;
+    transition-property: display;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+  }
+}
+
+.expandEmpleo {
+  height: 100%;
+  cursor: default;
+
+  .header {
+    .toggle {
+      animation-name: flipIcon;
+    }
+  }
+
+  .desc {
+    display: flex;
+  }
+
+  .salario {
+    display: flex;
+  }
+}
