@@ -25,10 +25,13 @@
       justify-content: space-between;
 
       .tables {
+        @include card();
+        border-radius: 5px;
         display: flex;
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 100%;
         padding: 10px;
+        margin: 10px 30px;
       }
 
       table {
@@ -72,7 +75,7 @@
         font-weight: 100;
         font-size: 1.4em;
         color: #161616;
-        margin: 10px 5px;
+        margin: 15px 5px 0 5px;
       }
 
       .mat-list {
